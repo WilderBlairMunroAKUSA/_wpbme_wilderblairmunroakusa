@@ -1,0 +1,310 @@
+[
+  "value", [
+    "array", [
+      [
+        "element", [
+          "value", [
+            "number", [
+              -0.0
+            ]
+          ]
+        ]
+      ],
+      [
+        "element", [
+          "value", [
+            "array", [
+              []
+            ]
+          ]
+        ]
+      ],
+      [
+        "element", [
+          "value", [
+            "object", [
+              {}
+            ]
+          ]
+        ]
+      ],
+      [
+        "element", [
+          "value", [
+            "array", [
+              [
+                "element", [
+                  "value", [
+                    "null", [
+                      null
+                    ]
+                  ]
+                ]
+              ],
+              [
+                "element", [
+                  "value", [
+                    "false", [
+                      false
+                    ]
+                  ]
+                ]
+              ],
+              [
+                "element", [
+                  "value", [
+                    "true", [
+                      true
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        "element", [
+          "value", [
+            "object", [
+              [
+                "member", [
+                  [
+                    "name", [
+                      "string", [
+                        "field"
+                      ]
+                    ]
+                  ],
+                  [
+                    "element", [
+                      "value", [
+                        "string", [
+                          "dev"
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        "element", [
+          "value", [
+            "object", [
+              [
+                "member", [
+                  [
+                    "name", [
+                      "string", [
+                        "tags"
+                      ]
+                    ]
+                  ],
+                  [
+                    "element", [
+                      "value", [
+                        "array", [
+                          [
+                            "element", [
+                              "value", [
+                                "string", [
+                                  "AI"
+                                ]
+                              ]
+                            ]
+                          ],
+                          [
+                            "element", [
+                              "value", [
+                                "string", [
+                                  "Sparse"
+                                ]
+                              ]
+                            ]
+                          ],
+                          [
+                            "element", [
+                              "value", [
+                                "array", [
+                                  [
+                                    "element", [
+                                      "value", [
+                                        "number", [
+                                          -1.1
+                                        ]
+                                      ]
+                                    ]
+                                  ],
+                                  [
+                                    "element", [
+                                      "value", [
+                                        "number", [
+                                          10000000.0
+                                        ]
+                                      ]
+                                    ]
+                                  ]
+                                ]
+                              ]
+                            ]
+                          ],
+                          [
+                            "element", [
+                              "value", [
+                                "object", [
+                                  [
+                                    "member", [
+                                      [
+                                        "name", [
+                                          "string", [
+                                            "key"
+                                          ]
+                                        ]
+                                      ],
+                                      [
+                                        "element", [
+                                          "value", [
+                                            "object", [
+                                              [
+                                                "member", [
+                                                  [
+                                                    "name", [
+                                                      "string", [
+                                                        "sub1"
+                                                      ]
+                                                    ]
+                                                  ],
+                                                  [
+                                                    "element", [
+                                                      "value", [
+                                                        "false", [
+                                                          false
+                                                        ]
+                                                      ]
+                                                    ]
+                                                  ]
+                                                ]
+                                              ],
+                                              [
+                                                "member", [
+                                                  [
+                                                    "name", [
+                                                      "string", [
+                                                        "sub1"
+                                                      ]
+                                                    ]
+                                                  ],
+                                                  [
+                                                    "element", [
+                                                      "value", [
+                                                        "array", [
+                                                          []
+                                                        ]
+                                                      ]
+                                                    ]
+                                                  ]
+                                                ]
+                                              ],
+                                              [
+                                                "member", [
+                                                  [
+                                                    "name", [
+                                                      "string", [
+                                                        "sub1"
+                                                      ]
+                                                    ]
+                                                  ],
+                                                  [
+                                                    "element", [
+                                                      "value", [
+                                                        "number", [
+                                                          -2
+                                                        ]
+                                                      ]
+                                                    ]
+                                                  ]
+                                                ]
+                                              ]
+                                            ]
+                                          ]
+                                        ]
+                                      ]
+                                    ]
+                                  ]
+                                ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        "element", [
+          "value", [
+            "object", [
+              [
+                "member", [
+                  [
+                    "name", [
+                      "string", [
+                        "active"
+                      ]
+                    ]
+                  ],
+                  [
+                    "element", [
+                      "value", [
+                        "true", [
+                          true
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        "element", [
+          "value", [
+            "object", [
+              [
+                "member", [
+                  [
+                    "name", [
+                      "string", [
+                        "key"
+                      ]
+                    ]
+                  ],
+                  [
+                    "element", [
+                      "value", [
+                        "object", [
+                          {}
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+]

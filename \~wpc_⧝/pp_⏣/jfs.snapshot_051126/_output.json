@@ -1,0 +1,210 @@
+["value", [
+    "object",
+    [
+      ["member", [
+          ["name", [
+              "string",
+              [
+                "user"
+              ]
+            ]
+          ],
+          ["element", [
+              "value",
+              ["string", [
+                  "dev"
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      ["member", [
+          ["name", [
+              "string",
+              [
+                "tags"
+              ]
+            ]
+          ],
+          ["element", [
+              "value",
+              ["array", [
+                  ["element", [
+                      "value",
+                      ["string", [
+                          "AI"
+                        ]
+                      ]
+                    ]
+                  ],
+                  ["element", [
+                      "value",
+                      ["string", [
+                          "Sparse"
+                        ]
+                      ]
+                    ]
+                  ],
+                  ["element", [
+                      "value",
+                      ["array", [
+                          ["element", [
+                              "value",
+                              ["number", [
+                                  1
+                                ]
+                              ]
+                            ]
+                          ],
+                          ["element", [
+                              "value",
+                              ["number", [
+                                  2
+                                ]
+                              ]
+                            ]
+                          ],
+                          ["element", [
+                              "value",
+                              ["null", [
+                                  null
+                                ]
+                              ]
+                            ]
+                          ],
+                          ["element", [
+                              "value",
+                              ["number", [
+                                  -0.0
+                                ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ],
+                  ["element", [
+                      "value",
+                      ["object", [
+                          ["member", [
+                              ["name", [
+                                  "string",
+                                  [
+                                    "key"
+                                  ]
+                                ]
+                              ],
+                              ["element", [
+                                  "value",
+                                  ["object", [
+                                      ["member", [
+                                          ["name", [
+                                              "string",
+                                              [
+                                                "sub1"
+                                              ]
+                                            ]
+                                          ],
+                                          ["element", [
+                                              "value",
+                                              ["false", [
+                                                  false
+                                                ]
+                                              ]
+                                            ]
+                                          ]
+                                        ]
+                                      ],
+                                      ["member", [
+                                          ["name", [
+                                              "string",
+                                              [
+                                                "sub1"
+                                              ]
+                                            ]
+                                          ],
+                                          ["element", [
+                                              "value",
+                                              ["array", [
+                                                  []
+                                                ]
+                                              ]
+                                            ]
+                                          ]
+                                        ]
+                                      ],
+                                      ["member", [
+                                          ["name", [
+                                              "string",
+                                              [
+                                                "sub1"
+                                              ]
+                                            ]
+                                          ],
+                                          ["element", [
+                                              "value",
+                                              ["number", [
+                                                  -2
+                                                ]
+                                              ]
+                                            ]
+                                          ]
+                                        ]
+                                      ]
+                                    ]
+                                  ]
+                                ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      ["member", [
+          ["name", [
+              "string",
+              [
+                "active"
+              ]
+            ]
+          ],
+          ["element", [
+              "value",
+              ["true", [
+                  true
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      ["member", [
+          ["name", [
+              "string",
+              [
+                "key"
+              ]
+            ]
+          ],
+          ["element", [
+              "value",
+              ["object", [
+                  {}
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+]
