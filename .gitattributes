@@ -1,0 +1,27 @@
+
+# global lock and keyed
+*🔐* filter=ageencrypt
+
+*.rtf linguist-vendored
+___assemblages/_conversations_openai_raw/** linguist-detectable=false
+___assemblages/_conversations_anthropic_raw/** linguist-detectable=false
+___assemblages/_conversations_xai_raw/** linguist-detectable=false
+___assemblages/_conversations_google_raw/** linguist-detectable=false
+
+*.html linguist-language=HTML
+*.html linguist-detectable=true
+
+*.tex linguist-language=Tex
+*.tex linguist-detectable=true
+
+*.json linguist-language=JSON
+*.json linguist-detectable=true
+
+*.md linguist-language=Markdown
+*.md linguist-detectable=true
+
+*.txt linguist-language=Text
+*.txt linguist-detectable=true
+
+*.pdf linguist-language=PDF
+*.pdf linguist-detectable=true
