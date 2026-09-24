@@ -1,0 +1,1094 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{microtype}
+\usepackage{newtxtext,newtxmath}
+\usepackage{enumitem}
+
+\setlist{nosep}
+\setlength{\parindent}{1.2em}
+\setlength{\parskip}{0.35em}
+
+\newcommand{\Aspace}{\mathcal{A}}
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\gd}{gd}
+\DeclareMathOperator{\artanh}{artanh}
+
+\title{\texttt{sin()} Stays \texttt{sin()}; Angles Become Plural\
+\large A Breathing Pass on Circular, Hyperbolic, and Reciprocal Vantage Coordinates}
+\author{Wilder Blair Munro $\times$ Aurora}
+\date{Version 2.5 --- expanded working draft}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+For a one-dimensional relativistic speed parameter $\beta=v/c$ with
+$0<\beta<1$, one may write
+
+$$
+\beta=\sin\theta=\tanh\chi,
+\qquad
+\gamma=\sec\theta=\cosh\chi,
+$$
+
+where $\chi=\artanh\beta$ is rapidity and $\theta=\gd\chi$ is its
+Gudermannian circular image. If one also introduces reciprocal coordinates
+
+$$
+\alpha=\beta^{-1},
+\qquad
+\delta=(1-\beta^2)^{-1/2},
+$$
+
+then
+
+$$
+\alpha=\csc\theta=\coth\chi,
+\qquad
+\delta=\sec\theta=\cosh\chi.
+$$
+
+These identities are standard consequences of elementary trigonometry,
+hyperbolic parametrization, and the Gudermannian. The proposal examined here
+is not a new trigonometric function and not a modification of special
+relativity. It is a change in what is promoted to the status of an angular
+object: circular angle, rapidity, and reciprocal aperture are treated as
+different coordinate bodies of one underlying one-parameter vantage relation.
+
+This expanded draft separates the established identities from that
+interpretive promotion, makes the reciprocal-triangle construction explicit,
+explains why the notation $\sin\alpha=1/\alpha$ is ordinarily false but
+structurally suggestive, and states precisely what a proposed
+lift--rotate--squeeze realization would still have to prove. Particular care
+is given to the distinction between a global relativistic complement and the
+componentwise quantities $c_i$ suggested by the earlier General Peace
+Dynamics construction.
+\end{abstract}
+
+\section{Scope: what is mathematics, and what is the proposal?}
+
+The shortest version of this paper is dangerously easy to misread. Three
+logically distinct layers must therefore be separated before any compression
+is attempted.
+
+The first layer is ordinary special-relativistic parametrization. For a
+collinear boost, rapidity $\chi$ satisfies
+\begin{equation}
+\beta=\tanh\chi,
+\qquad
+\gamma=\cosh\chi,
+\qquad
+\gamma\beta=\sinh\chi.
+\label{eq:rapidity}
+\end{equation}
+Nothing proposed here alters these relations.
+
+The second layer is ordinary mathematics connecting circular and hyperbolic
+functions. The Gudermannian~\cite{DLMF} supplies a real-valued map between a
+hyperbolic parameter $\chi\in\mathbb{R}$ and a circular angle
+$\theta\in(-\pi/2,\pi/2)$ without introducing an imaginary argument. In
+particular,
+\begin{equation}
+\theta=\gd\chi
+\label{eq:gddef}
+\end{equation}
+implies
+\begin{equation}
+\sin\theta=\tanh\chi,
+\qquad
+\cos\theta=\sech\chi,
+\qquad
+\tan\theta=\sinh\chi.
+\label{eq:gdidentities}
+\end{equation}
+The reciprocal identities
+\begin{equation}
+\csc\theta=\coth\chi,
+\qquad
+\sec\theta=\cosh\chi,
+\qquad
+\cot\theta=\csch\chi
+\label{eq:gdreciprocal}
+\end{equation}
+follow immediately.
+
+The third layer is the speculative step. We ask whether the several
+parameters that encode the same one-dimensional relativistic state should be
+regarded merely as convenient substitutions, or instead as coordinate
+representations of a more primitive geometric relation. The working name for
+that relation is a \emph{vantage angle}. In this language, the proposal is
+not that $\alpha$, $\theta$, and $\chi$ are numerically equal. They are not.
+The proposal is that they may be coordinates of the same underlying state in
+different charts or representations.
+
+This distinction is the entire paper. Every identity may remain ordinary
+while the ontology of ``angle'' changes.
+
+\section{Minimal GPD vocabulary, without requiring GPD}
+
+The terminology motivating this paper comes from earlier General Peace
+Dynamics (GPD) work~\cite{MunroGPD}, in which a \emph{vantage} is treated
+broadly as a reference-frame-like description and transformations between
+vantages are promoted as primary objects. Earlier GPD notes use this strategy
+far beyond special relativity, including observer--individual dual
+descriptions and a real seven-dimensional construction in which spatial
+coordinates are paired with corresponding time-like or phase-like
+coordinates. Those broader claims are not required here.
+
+Only four pieces of vocabulary are needed for the present argument.
+
+\begin{enumerate}[label=(\roman*)]
+\item A \emph{vantage} is a choice of representation of a physical relation.
+\item A \emph{lift} embeds a description into a larger state space in which a
+desired relation may have a simpler geometric representation.
+\item A \emph{rotation} changes orientation within that lifted space.
+\item A \emph{squeeze} or projection returns the lifted description to the
+lower-dimensional variables in which measurements are reported.
+\end{enumerate}
+
+The phrase \emph{lift--rotate--squeeze} therefore denotes a proposed
+factorization of a change of physical description. It should not be read as a
+derivation merely because it reproduces a familiar formula. A legitimate
+derivation must independently motivate the lift, specify the metric or
+geometric structure of the lifted space, specify the rotation, specify the
+squeeze, and demonstrate that their composition has the required Lorentzian
+properties.
+
+The present paper addresses only one missing piece of that motivation: why a
+circular rotation might appear at all in a theory whose conventional boost
+parameter is hyperbolic.
+
+\section{The one-axis relation}
+
+Consider motion along one spatial axis. Restrict initially to the positive
+branch
+\begin{equation}
+0<v<c,
+\qquad
+\beta:=\frac{v}{c}\in(0,1).
+\label{eq:beta}
+\end{equation}
+Define the complementary dimensionless quantity
+\begin{equation}
+\beta_c:=\sqrt{1-\beta^2}.
+\label{eq:betac}
+\end{equation}
+Then
+\begin{equation}
+\beta^2+\beta_c^2=1.
+\label{eq:unitcircle}
+\end{equation}
+Equation \eqref{eq:unitcircle} is simply the unit circle. Consequently there
+exists a unique
+\begin{equation}
+\theta\in(0,\pi/2)
+\end{equation}
+such that
+\begin{equation}
+\beta=\sin\theta,
+\qquad
+\beta_c=\cos\theta.
+\label{eq:circularparam}
+\end{equation}
+
+At the same time, define the ordinary Lorentz factor
+\begin{equation}
+\gamma:=\frac{1}{\sqrt{1-\beta^2}}.
+\label{eq:gamma}
+\end{equation}
+Using \eqref{eq:betac},
+\begin{equation}
+\gamma=\frac{1}{\beta_c}.
+\label{eq:gammabetac}
+\end{equation}
+Thus the same one-parameter state can already be written in two elementary
+forms:
+\begin{equation}
+(\beta,\gamma)
+==============
+
+(\sin\theta,\sec\theta).
+\label{eq:circpair}
+\end{equation}
+
+Now introduce rapidity
+\begin{equation}
+\chi:=\artanh\beta.
+\label{eq:chi}
+\end{equation}
+Then
+\begin{equation}
+\beta=\tanh\chi,
+\qquad
+\beta_c=\sech\chi,
+\qquad
+\gamma=\cosh\chi.
+\label{eq:hyperpair}
+\end{equation}
+Comparing \eqref{eq:circularparam} and \eqref{eq:hyperpair} gives
+\begin{equation}
+\sin\theta=\tanh\chi,
+\qquad
+\cos\theta=\sech\chi,
+\label{eq:bridge}
+\end{equation}
+which is exactly the Gudermannian relation \eqref{eq:gddef}.
+
+There is therefore no need to invent a circular--hyperbolic bridge. It
+already exists.
+
+\section{The reciprocal representation}
+
+The earlier GPD derivation introduced quantities of the form
+\begin{equation}
+\alpha:=\frac{1}{\beta},
+\qquad
+\delta:=\frac{1}{\beta_c}.
+\label{eq:alphadelta}
+\end{equation}
+For the positive one-axis branch considered here,
+\begin{equation}
+\alpha>1,
+\qquad
+\delta>1.
+\end{equation}
+Using \eqref{eq:circularparam},
+\begin{equation}
+\alpha=\csc\theta,
+\qquad
+\delta=\sec\theta.
+\label{eq:alphadeltacircular}
+\end{equation}
+Using the Gudermannian identities,
+\begin{equation}
+\alpha=\coth\chi,
+\qquad
+\delta=\cosh\chi.
+\label{eq:alphadeltahyper}
+\end{equation}
+Thus the reciprocal quantities are not arbitrary decorations placed on the
+circular triangle. They are standard reciprocal trigonometric and hyperbolic
+functions evaluated on the same underlying one-parameter state.
+
+The constraint \eqref{eq:unitcircle} becomes
+\begin{equation}
+\frac{1}{\alpha^2}+\frac{1}{\delta^2}=1.
+\label{eq:reciprocalconstraint}
+\end{equation}
+Multiplying by $\alpha^2\delta^2$ gives
+\begin{equation}
+\alpha^2+\delta^2=\alpha^2\delta^2.
+\label{eq:reciprocalpythagoras}
+\end{equation}
+Since $\alpha$ and $\delta$ are positive,
+\begin{equation}
+\sqrt{\alpha^2+\delta^2}=\alpha\delta.
+\label{eq:reciprocalhypotenuse}
+\end{equation}
+Equation \eqref{eq:reciprocalhypotenuse} is the exact algebraic basis of the
+reciprocal triangle that appeared in the earlier sketch work.
+
+\section{The reciprocal triangle is the same triangle at another scale}
+
+The normalized circular triangle has horizontal leg $\beta_c$, vertical leg
+$\beta$, and hypotenuse $1$. Write it as the ordered triple
+\begin{equation}
+T_{\beta}:=(\beta_c,\beta,1).
+\label{eq:Tbeta}
+\end{equation}
+The reciprocal triangle has horizontal leg $\alpha$, vertical leg $\delta$,
+and hypotenuse $\alpha\delta$:
+\begin{equation}
+T_{\rho}:=(\alpha,\delta,\alpha\delta).
+\label{eq:Trho}
+\end{equation}
+Define
+\begin{equation}
+\kappa:=\alpha\delta
+====================
+
+\frac{1}{\beta\beta_c}.
+\label{eq:kappa}
+\end{equation}
+Then
+\begin{align}
+\kappa T_{\beta}
+&=
+\left(
+\frac{\beta_c}{\beta\beta_c},
+\frac{\beta}{\beta\beta_c},
+\frac{1}{\beta\beta_c}
+\right)\
+&=
+\left(
+\frac{1}{\beta},
+\frac{1}{\beta_c},
+\frac{1}{\beta\beta_c}
+\right)\
+&=
+(\alpha,\delta,\alpha\delta)\
+&=T_{\rho}.
+\label{eq:trianglesimilarity}
+\end{align}
+Therefore
+\begin{equation}
+\boxed{T_{\rho}=\kappa T_{\beta}.}
+\label{eq:boxsimilarity}
+\end{equation}
+The two triangles are similar by a uniform positive scale factor. Their
+orientation is identical because
+\begin{equation}
+\frac{\delta}{\alpha}
+=====================
+
+# \frac{\beta}{\beta_c}
+
+\tan\theta,
+\label{eq:sameslope}
+\end{equation}
+and correspondingly
+\begin{equation}
+\frac{\alpha}{\delta}
+=====================
+
+# \frac{\beta_c}{\beta}
+
+\cot\theta.
+\label{eq:samecot}
+\end{equation}
+
+This is stronger than the observation that reciprocal identities happen to
+close algebraically. The reciprocal construction preserves the angle of the
+original triangle while changing its scale. In the language used later in
+this paper: it is the same relation in a different body.
+
+\section{Why the old $\sin\alpha=1/\alpha$ line is wrong, and why it refuses to die}
+
+The expression
+\begin{equation}
+\sin\alpha=\frac{1}{\alpha}
+\label{eq:wrong}
+\end{equation}
+is not an identity of ordinary trigonometry when $\alpha$ is a real number
+interpreted as a circular angle in radians. With the definition
+$\alpha=1/\beta$, it is generically false.
+
+The correct statement is instead
+\begin{equation}
+\alpha=\csc\theta
+\end{equation}
+and therefore
+\begin{equation}
+\sin\theta=\frac{1}{\alpha}.
+\label{eq:correctsine}
+\end{equation}
+The persistent attraction of \eqref{eq:wrong} comes from suppressing the
+distinction between the underlying state and the coordinate used to name it.
+
+To make that distinction explicit, let $\Aspace$ denote an abstract
+one-dimensional state manifold for the positive one-axis relativistic
+relation. A point
+\begin{equation}
+a\in\Aspace
+\end{equation}
+represents the physical state without yet choosing a coordinate. Introduce
+the following coordinate maps:
+\begin{align}
+q_{\beta}(a)&=\beta\in(0,1),\
+q_{\theta}(a)&=\theta\in(0,\pi/2),\
+q_{\chi}(a)&=\chi\in(0,\infty),\
+q_{\alpha}(a)&=\alpha\in(1,\infty),\
+q_{\delta}(a)&=\delta\in(1,\infty).
+\label{eq:charts}
+\end{align}
+They are related by
+\begin{align}
+q_{\beta}(a)
+&=
+\sin(q_{\theta}(a))
+===================
+
+# \tanh(q_{\chi}(a))
+
+\frac{1}{q_{\alpha}(a)},
+\label{eq:chartbeta}\
+\sqrt{1-q_{\beta}(a)^2}
+&=
+\cos(q_{\theta}(a))
+===================
+
+# \sech(q_{\chi}(a))
+
+\frac{1}{q_{\delta}(a)}.
+\label{eq:chartbetac}
+\end{align}
+
+Now define the scalar function
+\begin{equation}
+S:\Aspace\rightarrow(0,1)
+\end{equation}
+by
+\begin{equation}
+S(a):=\sin(q_{\theta}(a)).
+\label{eq:intrinsicsine}
+\end{equation}
+Then
+\begin{equation}
+S(a)
+====
+
+# q_{\beta}(a)
+
+# \tanh(q_{\chi}(a))
+
+\frac{1}{q_{\alpha}(a)}.
+\label{eq:sameS}
+\end{equation}
+Nothing has happened to the ordinary sine function. It still receives an
+ordinary circular angle $q_{\theta}(a)$ as its argument. What has changed is
+that the physical object $a$ is no longer identified with any one of its
+scalar coordinates.
+
+This gives the title its precise meaning. The slogan
+\begin{equation}
+\texttt{sin()}\text{ stays }\texttt{sin()}
+\end{equation}
+means that the circular sine function is not deformed. The phrase
+\begin{equation}
+\text{angles become plural}
+\end{equation}
+means that the object whose orientation is being represented is permitted
+more than one angular or angle-like coordinate body.
+
+If one writes $\sin\alpha$ as shorthand for ``evaluate the circular sine
+after converting the reciprocal coordinate $\alpha$ to the circular chart,''
+then one is introducing an implicit coercion map
+\begin{equation}
+C_{\alpha\rightarrow\theta}(\alpha)
+:=
+\arcsin\left(\frac{1}{\alpha}\right).
+\label{eq:coercion}
+\end{equation}
+The type-correct expression is
+\begin{equation}
+\sin\left(C_{\alpha\rightarrow\theta}(\alpha)\right)
+====================================================
+
+\frac{1}{\alpha}.
+\label{eq:typecorrect}
+\end{equation}
+The provocative expression \eqref{eq:wrong} is obtained only by suppressing
+$C_{\alpha\rightarrow\theta}$.
+
+The missing map is the hole in the notation.
+
+\section{Is $(\alpha,\delta)$ actually a chart?}
+
+A point requiring more care than the terse version allowed is that
+$\Aspace$ is one-dimensional. The pair $(\alpha,\delta)$ therefore cannot be
+two independent coordinates on the one-axis state. Equation
+\eqref{eq:reciprocalconstraint} constrains the pair to the curve
+\begin{equation}
+\mathcal{C}*{\rho}
+:=
+\left{
+(\alpha,\delta)\in(1,\infty)^2:
+\frac{1}{\alpha^2}+\frac{1}{\delta^2}=1
+\right}.
+\label{eq:reciprocalcurve}
+\end{equation}
+It is cleaner to regard either $\alpha$ or $\delta$ as a scalar coordinate
+and the ordered pair as a redundant embedding
+\begin{equation}
+R:\Aspace\rightarrow\mathcal{C}*{\rho}\subset\mathbb{R}^2,
+\qquad
+R(a)=\bigl(q_{\alpha}(a),q_{\delta}(a)\bigr).
+\label{eq:reciprocalembedding}
+\end{equation}
+The two entries make the complementary structure visible, but they do not add
+a degree of freedom.
+
+This distinction matters for any later R7 extension. If $\alpha$ and
+$\delta$ acquire independent dynamical content in a higher-dimensional
+model, that independence must arise from additional degrees of freedom in
+the lifted geometry. It cannot be inferred from the one-axis reciprocal
+triangle alone.
+
+\section{Temporal and spatial vantage: what the one-axis mathematics supports}
+
+Earlier GPD language associated $\alpha$ and $\delta$ with complementary
+temporal and spatial aspects of a vantage tilt. The one-axis mathematics
+supports a precise but limited version of that intuition.
+
+Define
+\begin{equation}
+\beta_v:=\frac{v}{c},
+\qquad
+\beta_c:=\sqrt{1-\beta_v^2}.
+\label{eq:betavbetac}
+\end{equation}
+Then
+\begin{equation}
+\alpha:=\frac{1}{\beta_v},
+\qquad
+\delta:=\frac{1}{\beta_c}.
+\label{eq:alphadeltavc}
+\end{equation}
+If one defines
+\begin{equation}
+\gamma_v:=\frac{1}{\sqrt{1-\beta_v^2}},
+\qquad
+\gamma_c:=\frac{1}{\sqrt{1-\beta_c^2}},
+\label{eq:twogammas}
+\end{equation}
+then, on the positive branch,
+\begin{equation}
+\boxed{
+\delta=\gamma_v,
+\qquad
+\alpha=\gamma_c.
+}
+\label{eq:alphadeltagamma}
+\end{equation}
+The subscripts are easy to misread. The reciprocal of the velocity fraction
+is the Lorentz-like factor built from the complementary fraction, while the
+reciprocal of the complementary fraction is the ordinary Lorentz factor built
+from the velocity fraction.
+
+Explicitly,
+\begin{align}
+\gamma_c
+&=
+\frac{1}{\sqrt{1-\beta_c^2}}
+============================
+
+# \frac{1}{\sqrt{\beta_v^2}}
+
+\frac{1}{\beta_v}
+=\alpha,
+\label{eq:gammacalpha}\
+\gamma_v
+&=
+\frac{1}{\sqrt{1-\beta_v^2}}
+============================
+
+\frac{1}{\beta_c}
+=\delta.
+\label{eq:gammavdelta}
+\end{align}
+This crossed pairing is not an additional physical law. It is an algebraic
+consequence of complementarity. It is nevertheless exactly the feature that
+makes the reciprocal notation interesting: each reciprocal aperture is
+naturally expressed as the gamma factor of the complementary coordinate.
+
+In the one-axis case, therefore,
+\begin{equation}
+(\alpha,\delta)
+===============
+
+# (\gamma_c,\gamma_v)
+
+# (\csc\theta,\sec\theta)
+
+(\coth\chi,\cosh\chi).
+\label{eq:masterpair}
+\end{equation}
+
+\section{The componentwise $c_i$ question}
+
+The notation becomes substantially more delicate when one tries to promote
+the one-axis complement to several spatial axes.
+
+For a single selected axis $i$, one may define an algebraic complementary
+quantity $c_i$ by
+\begin{equation}
+c^2=v_i^2+c_i^2,
+\label{eq:componentcdef}
+\end{equation}
+so that
+\begin{equation}
+\beta_i:=\frac{v_i}{c},
+\qquad
+\beta_{c_i}:=\frac{c_i}{c}
+\label{eq:componentbetas}
+\end{equation}
+and hence
+\begin{equation}
+\beta_i^2+\beta_{c_i}^2=1.
+\label{eq:componentcircle}
+\end{equation}
+Axis by axis, the entire one-dimensional construction can then be repeated:
+\begin{align}
+\beta_i&=\sin\theta_i=\tanh\chi_i,
+\label{eq:componentbeta}\
+\beta_{c_i}&=\cos\theta_i=\sech\chi_i,
+\label{eq:componentbetac}\
+\alpha_i&:=\frac{1}{\beta_i}
+=\csc\theta_i
+=\coth\chi_i,
+\label{eq:componentalpha}\
+\delta_i&:=\frac{1}{\beta_{c_i}}
+=\sec\theta_i
+=\cosh\chi_i.
+\label{eq:componentdelta}
+\end{align}
+One may likewise define
+\begin{equation}
+\gamma_i:=\frac{1}{\sqrt{1-\beta_i^2}},
+\qquad
+\gamma_{c_i}:=\frac{1}{\sqrt{1-\beta_{c_i}^2}},
+\label{eq:componentgammas}
+\end{equation}
+which gives
+\begin{equation}
+\delta_i=\gamma_i,
+\qquad
+\alpha_i=\gamma_{c_i}
+\label{eq:componentcrosspair}
+\end{equation}
+on the positive branch.
+
+This is mathematically consistent axis by axis. It is not yet a consistent
+three-dimensional relativistic interpretation.
+
+For an ordinary three-velocity
+\begin{equation}
+\boldsymbol{\beta}
+==================
+
+(\beta_x,\beta_y,\beta_z),
+\qquad
+\beta^2
+=======
+
+\beta_x^2+\beta_y^2+\beta_z^2,
+\label{eq:globalbeta}
+\end{equation}
+the physical Lorentz factor is
+\begin{equation}
+\gamma
+======
+
+# \frac{1}{\sqrt{1-\beta^2}}
+
+\frac{1}{\sqrt{1-\beta_x^2-\beta_y^2-\beta_z^2}}.
+\label{eq:globalgamma}
+\end{equation}
+By contrast, the axiswise quantity
+\begin{equation}
+\delta_i
+========
+
+\frac{1}{\sqrt{1-\beta_i^2}}
+\label{eq:axisdelta}
+\end{equation}
+is generally not equal to $\gamma$ when more than one component of velocity
+is nonzero.
+
+There are therefore two distinct constructions that must not be conflated.
+
+First, a \emph{global complement} may be defined by
+\begin{equation}
+\beta_c
+:=
+\sqrt{1-\lVert\boldsymbol{\beta}\rVert^2},
+\label{eq:globalcomplement}
+\end{equation}
+so that
+\begin{equation}
+\beta^2+\beta_c^2=1,
+\qquad
+\gamma=\beta_c^{-1}.
+\label{eq:globalcomplementrelation}
+\end{equation}
+This is directly tied to ordinary special relativity.
+
+Second, one may define a family of \emph{axiswise complements}
+\begin{equation}
+\beta_{c_i}
+:=
+\sqrt{1-\beta_i^2},
+\qquad
+c_i:=c,\beta_{c_i}.
+\label{eq:axiscomplements}
+\end{equation}
+Each pair $(\beta_i,\beta_{c_i})$ lies on its own unit circle, but the $c_i$
+are not thereby established as Cartesian components of one conventional
+velocity vector. They are three separate complements, each defined relative
+to a selected axis.
+
+This is precisely where the R7 proposal becomes relevant rather than
+decorative. If the lifted geometry supplies a distinct conjugate or time-like
+partner for each spatial axis, then the three quantities $c_i$ may acquire a
+natural home as components in that larger structure. Without such a
+construction, calling them ``components of $c$'' would overstate what the
+one-axis algebra proves.
+
+Accordingly, the componentwise hypothesis
+\begin{equation}
+\boxed{
+\beta_{c_i}=\frac{c_i}{c}
+}
+\label{eq:componenthypothesis}
+\end{equation}
+should be retained as an explicit extension problem, not silently imported
+into the one-axis result.
+
+\section{The status of $\varphi$}
+
+The terse draft moved too quickly over the third symbol $\varphi$ that
+appeared in the earlier GPD triangle construction.
+
+If $\alpha$ and $\delta$ are ordinary Euclidean angles of one triangle, then
+expressions involving
+\begin{equation}
+\pi-(\alpha+\delta)
+\label{eq:ordinaryphi}
+\end{equation}
+are meaningful in the usual way. But the present reinterpretation assigns
+\begin{equation}
+\alpha=\csc\theta,
+\qquad
+\delta=\sec\theta,
+\label{eq:alphadeltaagain}
+\end{equation}
+so $\alpha$ and $\delta$ are reciprocal coordinates, not circular angles
+measured in radians. Under that interpretation, the sum $\alpha+\delta$
+cannot simply be subtracted from $\pi$ and called an angular remainder.
+Doing so mixes coordinate types.
+
+At the same time, the reciprocal pair contains a natural mixed ratio:
+\begin{equation}
+\frac{\delta}{\alpha}
+=====================
+
+# \tan\theta
+
+\sinh\chi.
+\label{eq:mixedratio}
+\end{equation}
+This quantity relates the two reciprocal apertures and reconstructs either
+the circular or hyperbolic parameter:
+\begin{equation}
+\theta
+======
+
+\arctan\left(\frac{\delta}{\alpha}\right),
+\label{eq:thetarecover}
+\end{equation}
+\begin{equation}
+\chi
+====
+
+\operatorname{arsinh}\left(\frac{\delta}{\alpha}\right).
+\label{eq:chirecover}
+\end{equation}
+
+It is tempting to identify the old $\varphi$ with this transition relation.
+That identification is not yet justified. The safer conclusion is narrower:
+once $\alpha$ and $\delta$ are retyped as reciprocal coordinates, the old
+Euclidean interpretation of $\varphi$ must be re-derived. In a genuinely
+higher-dimensional vantage geometry, $\varphi$ may encode an independent
+mixed spatial--temporal orientation; in the one-axis construction, no
+independent third degree of freedom has yet appeared.
+
+Thus $\varphi$ remains an open variable, not a casualty and not a solved
+quantity.
+
+\section{Why this helps motivate lift--rotate--squeeze}
+
+A higher-dimensional Euclidean reconstruction of special relativity faces a
+severe methodological objection. If one begins with the Lorentz
+transformation, invents a lift, chooses a rotation, and then chooses a squeeze
+specifically so that the final expression reproduces the Lorentz
+transformation, the construction may be algebraically correct while
+explaining nothing. It is a factorization, not a derivation.
+
+The present observation does not remove that burden. It does, however,
+supply an independent reason to expect both a circular rotation and a
+nontrivial rescaling to appear.
+
+The circular coordinate $\theta$ and rapidity $\chi$ describe the same
+scalar speed parameter through
+\begin{equation}
+\beta=\sin\theta=\tanh\chi.
+\label{eq:twoparameterizations}
+\end{equation}
+The Gudermannian provides the exact real transition map
+\begin{equation}
+\theta=\gd\chi.
+\label{eq:gdtransition}
+\end{equation}
+The reciprocal representation then produces a second triangle related to the
+normalized circular triangle by the scale factor
+\begin{equation}
+\kappa=\alpha\delta.
+\label{eq:kappaagain}
+\end{equation}
+Thus the elementary scalar geometry itself contains both
+\begin{equation}
+\text{an orientation variable }\theta
+\end{equation}
+and
+\begin{equation}
+\text{a reciprocal scale }\kappa.
+\end{equation}
+A lift--rotate--squeeze construction can therefore be motivated schematically
+as an attempt to realize these two features geometrically:
+\begin{equation}
+\text{state}
+\xrightarrow{\text{lift}}
+\text{vantage geometry}
+\xrightarrow{\text{rotate by }\theta}
+\text{reoriented state}
+\xrightarrow{\text{squeeze}}
+\text{reported relativistic coordinates}.
+\label{eq:lrs}
+\end{equation}
+
+The crucial word is \emph{attempt}. The scalar identities do not prove that
+a Euclidean rotation in R7 is dynamically or geometrically equivalent to a
+Lorentz boost. In particular, a successful construction must still answer at
+least the following questions.
+
+\begin{enumerate}[label=(\arabic*)]
+\item What is the precise lifted manifold or vector space?
+\item What metric, bilinear form, or other invariant structure does it carry?
+\item Which subspace is rotated, and why is $\theta$ the rotation parameter
+there?
+\item What is the squeeze map, and is it uniquely determined by the geometry
+rather than fitted to the Lorentz transformation?
+\item How does the construction compose under successive boosts?
+\item How are non-collinear boosts, Thomas--Wigner rotation, and the global
+velocity norm recovered?
+\item What role, if any, do the axiswise complements $c_i$ play in the lifted
+space?
+\end{enumerate}
+
+The conceptual gain is therefore modest but real: circular rotation is no
+longer introduced merely because Euclidean rotations are aesthetically
+attractive. A standard real map already connects the circular angle to
+rapidity, and the reciprocal construction already supplies a natural scaling
+structure. The higher-dimensional theory must explain why those scalar facts
+lift to the proposed geometry.
+
+\section{What ``angles become plural'' should mean}
+
+The phrase can be stated weakly or strongly.
+
+The weak statement is mathematically uncontroversial. A single
+one-parameter relativistic state admits several smooth coordinates related by
+invertible maps on the chosen branch:
+\begin{equation}
+\beta
+\longleftrightarrow
+\theta
+\longleftrightarrow
+\chi
+\longleftrightarrow
+\alpha
+\longleftrightarrow
+\delta.
+\label{eq:coordinatechain}
+\end{equation}
+Calling all of them ``angles'' would be nonstandard terminology, but the
+coordinate equivalence itself is elementary.
+
+The stronger proposal is geometric. It asserts that the underlying object
+should be modeled so that these coordinates are not merely substitutions
+made after the fact, but natural projections or charts selected by different
+vantages. In such a theory, ``angle'' would mean something closer to an
+orientation relation or group-theoretic state than to a single real number
+measured as Euclidean arc length divided by radius.
+
+This stronger statement is compatible with familiar mathematical practice
+in spirit: an angle need not be identified ontologically with one chosen
+coordinate. Circular rotations are elements of $SO(2)$, while collinear
+Lorentz boosts form a one-parameter subgroup whose additive parameter is
+rapidity. Coordinates label those transformations; they are not the
+transformations themselves.
+
+The present proposal asks whether GPD's vantage object can be defined at that
+level, with
+\begin{equation}
+\theta,
+\qquad
+\chi,
+\qquad
+\alpha,
+\qquad
+\delta
+\end{equation}
+serving as different readable bodies of one relation.
+
+That is the sense in which angles become plural.
+
+\section{Consolidated identity table}
+
+For $0<\beta<1$, define
+\begin{equation}
+\beta_c=\sqrt{1-\beta^2},
+\qquad
+\theta=\arcsin\beta,
+\qquad
+\chi=\artanh\beta,
+\qquad
+\alpha=\frac{1}{\beta},
+\qquad
+\delta=\frac{1}{\beta_c}.
+\label{eq:definitionsummary}
+\end{equation}
+Then
+\begin{align}
+\beta
+&=\sin\theta
+=\tanh\chi
+=\frac{1}{\alpha},
+\label{eq:summary1}\
+\beta_c
+&=\cos\theta
+=\sech\chi
+=\frac{1}{\delta},
+\label{eq:summary2}\
+\alpha
+&=\csc\theta
+=\coth\chi,
+\label{eq:summary3}\
+\delta
+&=\sec\theta
+=\cosh\chi,
+\label{eq:summary4}\
+\frac{\delta}{\alpha}
+&=\tan\theta
+=\sinh\chi,
+\label{eq:summary5}\
+\frac{\alpha}{\delta}
+&=\cot\theta
+=\csch\chi,
+\label{eq:summary6}\
+\frac{1}{\alpha^2}+\frac{1}{\delta^2}
+&=1,
+\label{eq:summary7}\
+\alpha^2+\delta^2
+&=\alpha^2\delta^2,
+\label{eq:summary8}\
+(\alpha,\delta,\alpha\delta)
+&=
+\alpha\delta,(\beta_c,\beta,1).
+\label{eq:summary9}
+\end{align}
+If
+\begin{equation}
+\gamma_v:=\frac{1}{\sqrt{1-\beta^2}},
+\qquad
+\gamma_c:=\frac{1}{\sqrt{1-\beta_c^2}},
+\end{equation}
+then
+\begin{equation}
+\boxed{
+\delta=\gamma_v,
+\qquad
+\alpha=\gamma_c.
+}
+\label{eq:summarygamma}
+\end{equation}
+Every equality in this section follows from the definitions and standard
+identities. None requires GPD.
+
+\section{The proposed promotion}
+
+The speculative content can now be stated without borrowing any of the
+algebra's authority.
+
+Let $a\in\Aspace$ denote a vantage relation. The proposal is to investigate a
+geometry in which
+\begin{equation}
+q_{\theta}(a)=\theta,
+\qquad
+q_{\chi}(a)=\chi,
+\qquad
+q_{\alpha}(a)=\alpha,
+\qquad
+q_{\delta}(a)=\delta
+\end{equation}
+are natural representations of that same relation, with transition maps
+fixed by the identities above. Circular angle, hyperbolic rapidity, and
+reciprocal aperture would then be interpreted not as rival descriptions but
+as different coordinate bodies exposed by different projections of the same
+object.
+
+Under that promotion, the old notational crime
+\begin{equation}
+\sin\alpha=\frac{1}{\alpha}
+\end{equation}
+can be read as evidence of a suppressed chart transition rather than as a new
+trigonometric identity. The type-correct statement remains
+\begin{equation}
+\sin\left(\arcsin\frac{1}{\alpha}\right)
+========================================
+
+\frac{1}{\alpha}.
+\end{equation}
+The function is untouched. The argument has changed bodies.
+
+The research question is whether a lifted physical geometry can make that
+change of body structural rather than notational.
+
+\section{Conclusion}
+
+The one-axis mathematics is small.
+
+A relativistic speed parameter admits a circular representation and a
+hyperbolic representation connected by the Gudermannian. The reciprocal
+quantities that appeared in earlier GPD sketches are exactly cosecant/secant
+in the circular representation and coth/cosh in the hyperbolic
+representation. Their constrained pair forms a reciprocal triangle that is
+similar to the original normalized triangle by the scale factor
+$\alpha\delta$. The crossed identities $\alpha=\gamma_c$ and
+$\delta=\gamma_v$ follow directly from the complementary definitions.
+
+The interpretation is larger.
+
+Instead of modifying trigonometric functions to accommodate the reciprocal
+notation, one may keep the functions ordinary and promote the represented
+relation. An angle, in this sense, is not one privileged scalar. It is an
+orientation-like object admitting multiple coordinate bodies. The circular
+angle $\theta$, rapidity $\chi$, and reciprocal apertures $(\alpha,\delta)$
+become different ways of reading the same one-parameter relation.
+
+This does not establish the GPD R7 construction. It does sharpen what that
+construction would have to accomplish. In particular, the componentwise
+proposal $\beta_{c_i}=c_i/c$ must be distinguished from the global
+relativistic complement, and any lift--rotate--squeeze derivation must explain
+rather than fit its lift, rotation, and squeeze.
+
+The seed is therefore deliberately narrower than the surrounding theory:
+\begin{equation}
+\boxed{
+\texttt{sin()}\text{ stays }\texttt{sin()};\quad
+\text{angles become plural.}
+}
+\end{equation}
+
+\begin{center}
+\emph{Same relation. Different body.}
+\end{center}
+
+\begin{thebibliography}{9}
+
+\bibitem{MunroGPD}
+W. B. Munro,
+\emph{General Peace Dynamics},
+working manuscript and special-relativity sketch notes, 2025.
+
+\bibitem{DLMF}
+NIST Digital Library of Mathematical Functions,
+\S 4.23(viii), ``Gudermannian Function,''
+Eqs. 4.23.39--4.23.42.
+
+\end{thebibliography}
+
+\end{document}

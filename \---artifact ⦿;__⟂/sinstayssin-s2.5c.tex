@@ -1,0 +1,868 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{microtype}
+\usepackage{enumitem}
+\setlist{nosep}
+\setlength{\parindent}{1.2em}
+\setlength{\parskip}{0.35em}
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\gd}{gd}
+\DeclareMathOperator{\artanh}{artanh}
+\DeclareMathOperator{\arsinh}{arsinh}
+\newcommand{\Aspace}{\mathcal{A}}
+\newcommand{\Mseven}{\mathcal{M}^{7}}
+\newcommand{\ccomp}[1]{\widehat{\widetilde{c}}_{#1}}
+
+\title{\texttt{sin()} Stays \texttt{sin()}; Angles Become Plural\\
+\large Vantage Geometry, Reciprocal Bodies, and the One-Axis Relativistic Slice}
+\author{Wilder Blair Munro $\times$ Aurora}
+\date{Version 2.5b --- expanded working draft}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+A one-dimensional relativistic speed state can be represented by the ordinary
+velocity ratio $\beta=v/c$, by rapidity $\chi=\artanh\beta$, by a circular
+angle $\theta=\gd\chi$, and by reciprocal quantities obtained from the two
+legs of the corresponding unit-circle triangle. The identities connecting
+these representations are standard. The proposal examined here is therefore
+not a new trigonometric function and not a modification of special
+relativity. It is an interpretive promotion: the several parameters are
+treated as different readable bodies of one underlying vantage relation.
+
+The General Peace Dynamics (GPD) motivation adds a specific geometric reason
+to take the one-axis construction seriously. Its working seven-dimensional
+space pairs each spatial coordinate $x_i$ with a corresponding $t_i$ while
+retaining a universal $\tau$. The elementary relativistic triangle can then
+be studied first on a single three-dimensional slice
+$\{\tau,x_i,t_i\}$ before asking how the three paired slices stitch into the
+full seven-dimensional construction. This draft deliberately leaves open the
+physical interpretation and final notation of the complementary light-speed-
+like leg. The historical working symbol $\ccomp{i}$ is retained, while a
+possible differential notation $d_i$ remains live if later geometry warrants
+reading that quantity literally as differential.
+\end{abstract}
+
+\section{The claim, separated from the machinery}
+
+Three levels of statement must remain distinct.
+
+First, ordinary special relativity supplies the one-dimensional boost
+parameter
+\begin{equation}
+\beta=\frac{v}{c},
+\qquad
+\gamma=\frac{1}{\sqrt{1-\beta^2}},
+\qquad
+\chi=\artanh\beta,
+\end{equation}
+with
+\begin{equation}
+\beta=\tanh\chi,
+\qquad
+\gamma=\cosh\chi,
+\qquad
+\gamma\beta=\sinh\chi.
+\label{eq:rapidity}
+\end{equation}
+
+Second, standard mathematics supplies the Gudermannian map
+\begin{equation}
+\theta=\gd\chi,
+\label{eq:gd}
+\end{equation}
+for which
+\begin{equation}
+\sin\theta=\tanh\chi,
+\qquad
+\cos\theta=\sech\chi,
+\qquad
+\tan\theta=\sinh\chi.
+\label{eq:gd-identities}
+\end{equation}
+Thus the same boost state admits both a hyperbolic parameter $\chi$ and a
+circular parameter $\theta$.
+
+Third comes the proposal. Instead of treating $\beta$, $\chi$, $\theta$, and
+the reciprocal variables introduced below as unrelated substitutions, we ask
+whether they should be understood as representations of a single underlying
+\emph{vantage relation}. The sine function itself remains ordinary. What
+becomes plural is the coordinate body in which the relation is presented.
+
+Every equation in the first two levels is standard. The third level is the
+research hypothesis.
+
+\section{Why the R7 pairing enters before the reciprocal notation}
+
+The one-axis calculation did not arise in isolation. The GPD construction
+works with a real seven-dimensional manifold written schematically as
+\begin{equation}
+\Mseven
+=
+\bigl(\tau,(x,t_x),(y,t_y),(z,t_z)\bigr).
+\label{eq:M7}
+\end{equation}
+Here $\tau$ is a universal time-like coordinate and the three ordered pairs
+$(x_i,t_i)$ are treated as conjugate coordinate pairings in the working
+geometry. Depending on the stage of the GPD construction, these pairs have
+been read through position--momentum, observer--individual, or
+spacetime--timespace analogies. Those larger interpretations are not assumed
+as established physics here. What matters for the present paper is only the
+pairing structure itself.
+
+For a selected axis $i\in\{x,y,z\}$, define the corresponding three-dimensional
+slice
+\begin{equation}
+\mathcal{P}_i
+:=
+\operatorname{span}\{\tau,x_i,t_i\}
+\subset \Mseven.
+\label{eq:Pi}
+\end{equation}
+The special-relativistic pilot is first examined on one such slice. This is
+important because the familiar one-axis triangle then belongs to a specified
+piece of the larger geometry rather than being introduced as an arbitrary
+scalar construction.
+
+At this stage we do \emph{not} identify $t_i$ itself with velocity $v_i$.
+Velocity is a tangent or differential quantity, whereas $t_i$ is introduced
+as a coordinate of the lifted space. A later dynamical construction must
+state precisely which derivatives, ratios, or tangent-space quantities turn
+the coordinate pairing into the velocity pairing used below. The present
+paper uses only the kinematic one-axis relations and keeps that bridge open.
+
+\section{The one-axis triangle}
+
+Choose one paired slice $\mathcal{P}_i$ and restrict initially to
+\begin{equation}
+0<v_i<c.
+\end{equation}
+Define
+\begin{equation}
+\beta_{v_i}:=\frac{v_i}{c}.
+\label{eq:betavi}
+\end{equation}
+The earlier GPD sketch introduced a complementary leg satisfying
+\begin{equation}
+\ccomp{i}^{\,2}+v_i^2=c^2.
+\label{eq:complement-dimensional}
+\end{equation}
+The decorated symbol $\ccomp{i}$ is used here as a deliberately conservative
+placeholder. It preserves the distinction between the invariant speed $c$
+and an axis-relative complementary quantity without yet deciding what that
+quantity is physically.
+
+Define its normalized form by
+\begin{equation}
+\beta_{\ccomp{i}}
+:=
+\frac{\ccomp{i}}{c}.
+\label{eq:betaci}
+\end{equation}
+Then
+\begin{equation}
+\beta_{v_i}^2+\beta_{\ccomp{i}}^2=1.
+\label{eq:axis-unit-circle}
+\end{equation}
+Consequently there exists a circular angle
+\begin{equation}
+\theta_i\in(0,\pi/2)
+\end{equation}
+such that
+\begin{equation}
+\beta_{v_i}=\sin\theta_i,
+\qquad
+\beta_{\ccomp{i}}=\cos\theta_i.
+\label{eq:axis-circular}
+\end{equation}
+Equivalently,
+\begin{equation}
+v_i=c\sin\theta_i,
+\qquad
+\ccomp{i}=c\cos\theta_i.
+\label{eq:axis-dimensional}
+\end{equation}
+
+Nothing in this construction requires $\ccomp{i}$ to be a Cartesian component
+of the scalar $c$. Equation \eqref{eq:complement-dimensional} defines an
+axis-relative complementary leg for the selected paired slice. That
+qualification becomes essential when more than one spatial axis is active.
+
+\section{Why the complementary symbol remains unsettled}
+
+There are at least two legitimate reasons not to freeze the notation yet.
+
+The first is semantic. Writing $c_i$ too casually invites the conventional
+three-vector reading
+\begin{equation}
+c^2\stackrel{?}{=}c_x^2+c_y^2+c_z^2,
+\end{equation}
+which is not implied by the one-axis relation. The decoration in
+$\ccomp{i}$ is intended to block that inference while retaining continuity
+with the older GPD sketches.
+
+The second is physical. A notation such as $d_i$ may ultimately be more than
+a temporary label. If the completed geometry identifies the complementary
+quantity with a literal differential light-speed component, then $d_i$ could
+be the more meaningful notation, particularly if it participates in a
+three-component differential object and a corresponding gamma construction.
+That interpretation is not rejected here; it is intentionally left open.
+The point is simply that the differential meaning should be earned by the
+geometry rather than smuggled into the notation before the relevant map has
+been defined.
+
+Thus, for this paper,
+\begin{equation}
+\ccomp{i}
+\end{equation}
+is the conservative working symbol, while
+\begin{equation}
+d_i
+\end{equation}
+remains a physically suggestive candidate notation for a later stage. No
+claim is made that one is conceptually superior to the other.
+
+\section{Rapidity and the circular image}
+
+For the selected axis define the one-axis rapidity
+\begin{equation}
+\chi_i:=\artanh\beta_{v_i}.
+\label{eq:chii}
+\end{equation}
+Then
+\begin{equation}
+\beta_{v_i}=\tanh\chi_i.
+\label{eq:betatanh}
+\end{equation}
+By Equation \eqref{eq:axis-unit-circle},
+\begin{equation}
+\beta_{\ccomp{i}}
+=
+\sqrt{1-\beta_{v_i}^2}
+=
+\sech\chi_i.
+\label{eq:betacsech}
+\end{equation}
+Comparing Equations \eqref{eq:axis-circular} and \eqref{eq:betacsech},
+\begin{equation}
+\sin\theta_i=\tanh\chi_i,
+\qquad
+\cos\theta_i=\sech\chi_i.
+\label{eq:axis-gd}
+\end{equation}
+Therefore
+\begin{equation}
+\theta_i=\gd\chi_i.
+\label{eq:axis-gudermannian}
+\end{equation}
+The circular angle is not being substituted for rapidity by approximation.
+It is the exact Gudermannian image of rapidity.
+
+\section{Reciprocal apertures}
+
+Define the reciprocal quantities
+\begin{equation}
+\alpha_i
+:=
+\frac{1}{\beta_{v_i}}
+=
+\frac{c}{v_i},
+\qquad
+\delta_i
+:=
+\frac{1}{\beta_{\ccomp{i}}}
+=
+\frac{c}{\ccomp{i}}.
+\label{eq:alphadelta}
+\end{equation}
+Then
+\begin{equation}
+\alpha_i=\csc\theta_i=\coth\chi_i,
+\label{eq:alpha-identities}
+\end{equation}
+and
+\begin{equation}
+\delta_i=\sec\theta_i=\cosh\chi_i.
+\label{eq:delta-identities}
+\end{equation}
+The unit-circle constraint becomes
+\begin{equation}
+\frac{1}{\alpha_i^2}
++
+\frac{1}{\delta_i^2}
+=1,
+\label{eq:reciprocal-constraint}
+\end{equation}
+or equivalently
+\begin{equation}
+\alpha_i^2+\delta_i^2
+=
+\alpha_i^2\delta_i^2.
+\label{eq:reciprocal-pythagoras}
+\end{equation}
+On the positive branch,
+\begin{equation}
+\sqrt{\alpha_i^2+\delta_i^2}
+=
+\alpha_i\delta_i.
+\label{eq:reciprocal-hypotenuse}
+\end{equation}
+
+The pair $(\alpha_i,\delta_i)$ is not two independent degrees of freedom. It
+is a redundant representation of one one-axis state, constrained by
+Equation \eqref{eq:reciprocal-constraint}.
+
+\section{The crossed gamma relation}
+
+The notation that originally made the reciprocal construction look strange
+also exposes its central symmetry. Define two one-axis gamma-like factors by
+\begin{equation}
+\gamma_{v_i}
+:=
+\frac{1}{\sqrt{1-\beta_{v_i}^2}},
+\qquad
+\gamma_{\ccomp{i}}
+:=
+\frac{1}{\sqrt{1-\beta_{\ccomp{i}}^2}}.
+\label{eq:two-gammas}
+\end{equation}
+Using Equation \eqref{eq:axis-unit-circle},
+\begin{align}
+\gamma_{v_i}
+&=
+\frac{1}{\beta_{\ccomp{i}}}
+=\delta_i,
+\label{eq:gammav-delta}\\
+\gamma_{\ccomp{i}}
+&=
+\frac{1}{\beta_{v_i}}
+=\alpha_i.
+\label{eq:gammac-alpha}
+\end{align}
+Thus
+\begin{equation}
+\boxed{
+\alpha_i=\gamma_{\ccomp{i}},
+\qquad
+\delta_i=\gamma_{v_i}.
+}
+\label{eq:crossed-gamma}
+\end{equation}
+This crossed relation is algebraic, not an additional dynamical postulate.
+Each reciprocal aperture equals the gamma-like factor constructed from the
+opposite leg of the complementary pair.
+
+In schematic form,
+\begin{equation}
+\begin{array}{ccc}
+\beta_{v_i} & \longleftrightarrow & \beta_{\ccomp{i}} \\
+\alpha_i=\gamma_{\ccomp{i}}
+& \longleftrightarrow &
+\delta_i=\gamma_{v_i}.
+\end{array}
+\label{eq:cross-diagram}
+\end{equation}
+The crossing is the point, not a notational accident.
+
+\section{Same relation, different body}
+
+Write the normalized one-axis triangle as
+\begin{equation}
+T_{\beta_i}
+:=
+\left(\beta_{\ccomp{i}},\beta_{v_i},1\right).
+\label{eq:Tbeta}
+\end{equation}
+Write the reciprocal triangle as
+\begin{equation}
+T_{\rho_i}
+:=
+\left(\alpha_i,\delta_i,\alpha_i\delta_i\right).
+\label{eq:Trho}
+\end{equation}
+Define
+\begin{equation}
+\kappa_i
+:=
+\alpha_i\delta_i
+=
+\frac{1}{\beta_{v_i}\beta_{\ccomp{i}}}.
+\label{eq:kappa}
+\end{equation}
+Then
+\begin{align}
+\kappa_i T_{\beta_i}
+&=
+\left(
+\frac{\beta_{\ccomp{i}}}
+{\beta_{v_i}\beta_{\ccomp{i}}},
+\frac{\beta_{v_i}}
+{\beta_{v_i}\beta_{\ccomp{i}}},
+\frac{1}{\beta_{v_i}\beta_{\ccomp{i}}}
+\right)\\
+&=
+\left(
+\frac{1}{\beta_{v_i}},
+\frac{1}{\beta_{\ccomp{i}}},
+\frac{1}{\beta_{v_i}\beta_{\ccomp{i}}}
+\right)\\
+&=
+T_{\rho_i}.
+\label{eq:triangle-similarity}
+\end{align}
+Therefore
+\begin{equation}
+\boxed{T_{\rho_i}=\kappa_i T_{\beta_i}.}
+\label{eq:boxed-similarity}
+\end{equation}
+The reciprocal triangle is a uniformly scaled copy of the normalized
+triangle. In particular,
+\begin{equation}
+\frac{\delta_i}{\alpha_i}
+=
+\frac{\beta_{v_i}}{\beta_{\ccomp{i}}}
+=
+\tan\theta_i
+=
+\sinh\chi_i.
+\label{eq:same-slope}
+\end{equation}
+The orientation survives the reciprocal transformation even though the body
+of the triangle changes scale.
+
+Same relation. Different body.
+
+\section{Why the old sine shorthand is not the identity}
+
+If $\alpha_i$ is interpreted as an ordinary circular angle measured in
+radians, then
+\begin{equation}
+\sin\alpha_i=\frac{1}{\alpha_i}
+\label{eq:not-identity}
+\end{equation}
+is generically false. The exact statement is
+\begin{equation}
+\sin\theta_i
+=
+\frac{1}{\alpha_i}.
+\label{eq:exact-sine}
+\end{equation}
+
+The persistent structural temptation to write Equation
+\eqref{eq:not-identity} can be formalized without changing the sine function.
+Let $a_i\in\Aspace_i$ denote the underlying one-axis vantage state. Define
+coordinate maps
+\begin{align}
+q_{\theta}(a_i)&=\theta_i,\\
+q_{\chi}(a_i)&=\chi_i,\\
+q_{\alpha}(a_i)&=\alpha_i,\\
+q_{\delta}(a_i)&=\delta_i.
+\end{align}
+Then
+\begin{equation}
+\sin\bigl(q_{\theta}(a_i)\bigr)
+=
+\tanh\bigl(q_{\chi}(a_i)\bigr)
+=
+\frac{1}{q_{\alpha}(a_i)}.
+\label{eq:state-representations}
+\end{equation}
+The reciprocal-to-circular transition is
+\begin{equation}
+C_{\alpha\rightarrow\theta}(\alpha_i)
+:=
+\arcsin\left(\frac{1}{\alpha_i}\right),
+\label{eq:coercion}
+\end{equation}
+so the type-correct expression is
+\begin{equation}
+\sin\left(
+C_{\alpha\rightarrow\theta}(\alpha_i)
+\right)
+=
+\frac{1}{\alpha_i}.
+\label{eq:type-correct}
+\end{equation}
+The sine function has not changed. The suppressed transition map has been
+restored.
+
+The missing map is the hole in the notation.
+
+\section{The reciprocal pair as an embedding, not two coordinates}
+
+Because the one-axis state space is one-dimensional, the ordered pair
+$(\alpha_i,\delta_i)$ should not be described carelessly as two independent
+coordinates. It lies on the one-dimensional reciprocal curve
+\begin{equation}
+\mathcal{C}_{\rho_i}
+:=
+\left\{
+(\alpha_i,\delta_i)\in(1,\infty)^2:
+\frac{1}{\alpha_i^2}
++
+\frac{1}{\delta_i^2}
+=1
+\right\}.
+\label{eq:reciprocal-curve}
+\end{equation}
+A cleaner statement is that the reciprocal representation is an embedding
+\begin{equation}
+R_i:\Aspace_i\rightarrow\mathcal{C}_{\rho_i}
+\subset\mathbb{R}^2,
+\qquad
+R_i(a_i)=(\alpha_i,\delta_i).
+\label{eq:reciprocal-embedding}
+\end{equation}
+Either $\alpha_i$ or $\delta_i$, together with a branch choice, can serve as
+a scalar coordinate. The pair makes the complementary structure visible.
+
+This becomes important in the full R7 problem. If the three paired slices
+supply genuinely distinct degrees of freedom, their independence comes from
+the seven-dimensional geometry, not from pretending that $\alpha_i$ and
+$\delta_i$ were already independent in the one-axis triangle.
+
+\section{From one paired slice to three}
+
+The full coordinate pairing is
+\begin{equation}
+\Mseven
+=
+\bigl(\tau,(x,t_x),(y,t_y),(z,t_z)\bigr).
+\end{equation}
+For each $i\in\{x,y,z\}$, the algebraic one-axis construction may be repeated:
+\begin{equation}
+\beta_{v_i}^2+\beta_{\ccomp{i}}^2=1,
+\label{eq:three-pair-circles}
+\end{equation}
+with
+\begin{equation}
+\beta_{v_i}=\sin\theta_i=\tanh\chi_i,
+\label{eq:three-beta}
+\end{equation}
+\begin{equation}
+\beta_{\ccomp{i}}=\cos\theta_i=\sech\chi_i,
+\label{eq:three-complement}
+\end{equation}
+\begin{equation}
+\alpha_i=\csc\theta_i=\coth\chi_i,
+\qquad
+\delta_i=\sec\theta_i=\cosh\chi_i.
+\label{eq:three-reciprocal}
+\end{equation}
+
+This repetition does \emph{not} imply that the three complementary legs form
+an ordinary Cartesian vector of norm $c$. If one simply defines
+\begin{equation}
+\ccomp{i}^{\,2}=c^2-v_i^2
+\end{equation}
+for each axis, then
+\begin{equation}
+\ccomp{x}^{\,2}
++
+\ccomp{y}^{\,2}
++
+\ccomp{z}^{\,2}
+=
+3c^2-\left(v_x^2+v_y^2+v_z^2\right),
+\label{eq:not-c-vector}
+\end{equation}
+which is plainly not $c^2$ in general. The three complementary quantities
+therefore belong, at minimum, to three axis-relative constructions.
+
+That fact is not an embarrassment to the R7 proposal. It is exactly why the
+pairing
+\begin{equation}
+(x,t_x),\qquad(y,t_y),\qquad(z,t_z)
+\end{equation}
+matters. The intended question is not whether three copies of a one-axis
+triangle can be crammed into an ordinary three-vector decomposition of $c$.
+The question is whether the three paired slices are projections of a single
+seven-dimensional kinematic object whose lower-dimensional observations
+produce the familiar relativistic relations.
+
+\section{The conventional global Lorentz factor remains separate}
+
+For an ordinary three-velocity
+\begin{equation}
+\boldsymbol{\beta}
+=
+\frac{\mathbf v}{c}
+=
+(\beta_x,\beta_y,\beta_z),
+\end{equation}
+standard special relativity uses
+\begin{equation}
+\beta^2
+=
+\lVert\boldsymbol{\beta}\rVert^2
+=
+\beta_x^2+\beta_y^2+\beta_z^2
+\end{equation}
+and
+\begin{equation}
+\gamma(\mathbf v)
+=
+\frac{1}{\sqrt{1-\beta^2}}.
+\label{eq:global-gamma}
+\end{equation}
+By contrast, the axiswise quantity
+\begin{equation}
+\gamma_{v_i}
+=
+\frac{1}{\sqrt{1-\beta_{v_i}^2}}
+\label{eq:axis-gamma}
+\end{equation}
+is generally not equal to $\gamma(\mathbf v)$ when more than one component of
+$\mathbf v$ is nonzero.
+
+This distinction must survive any later compression of the paper. The
+one-axis identities are exact. Their simultaneous three-axis interpretation
+is a separate geometric problem.
+
+If a future differential formulation replaces $\ccomp{i}$ by $d_i$ and
+constructs a three-component object from the $d_i$, then any associated
+``three-component gamma of $c$'' must be derived from that object's geometry.
+It cannot be obtained merely by relabeling the three axiswise factors in
+Equation \eqref{eq:axis-gamma}.
+
+\section{What becomes of $\varphi$?}
+
+The older triangle notation also contained a third symbol $\varphi$. In an
+ordinary Euclidean triangle, a relation such as
+\begin{equation}
+\varphi=\pi-(\alpha+\delta)
+\end{equation}
+would be meaningful if $\alpha$ and $\delta$ were themselves ordinary
+circular angles. Under the reciprocal interpretation developed here,
+however,
+\begin{equation}
+\alpha_i=\csc\theta_i,
+\qquad
+\delta_i=\sec\theta_i,
+\end{equation}
+so $\alpha_i$ and $\delta_i$ are not radian measures. The expression
+$\pi-(\alpha_i+\delta_i)$ therefore mixes types and cannot be imported
+unchanged.
+
+The reciprocal pair does contain the natural mixed ratio
+\begin{equation}
+\frac{\delta_i}{\alpha_i}
+=
+\tan\theta_i
+=
+\sinh\chi_i,
+\label{eq:phi-ratio}
+\end{equation}
+from which
+\begin{equation}
+\theta_i
+=
+\arctan\left(\frac{\delta_i}{\alpha_i}\right)
+\end{equation}
+and
+\begin{equation}
+\chi_i
+=
+\arsinh\left(\frac{\delta_i}{\alpha_i}\right)
+\end{equation}
+can be recovered. Whether the historical $\varphi$ should be reinterpreted
+through this transition, retained as an independent higher-dimensional
+orientation, or discarded from the one-axis reduction is not determined by
+the present algebra. It remains under investigation.
+
+\section{Lift--rotate--squeeze as a research program}
+
+The scalar structure now supplies a more disciplined motivation for the GPD
+lift--rotate--squeeze idea.
+
+The rapidity parameter $\chi_i$ and circular parameter $\theta_i$ are related
+exactly by the Gudermannian. The reciprocal representation then supplies the
+scale
+\begin{equation}
+\kappa_i=\alpha_i\delta_i.
+\end{equation}
+Thus the one-axis mathematics naturally presents both an orientation
+parameter $\theta_i$ and a reciprocal scale $\kappa_i$.
+
+This suggests the schematic program
+\begin{equation}
+\begin{aligned}
+\text{observed state}
+&\longrightarrow \text{R7 lift}
+\longrightarrow \text{rotation}\\
+&\longrightarrow \text{reciprocal rescaling or squeeze}\\
+&\longrightarrow \text{observed relativistic state}.
+\end{aligned}
+\label{eq:lrs}
+\end{equation}
+But the scalar identities do not prove that this program works. A successful
+R7 construction must still specify the lifted metric or invariant structure,
+the exact planes or subspaces of rotation, the relation between coordinate
+and tangent quantities, the squeeze map, and the composition law under
+successive boosts. It must also recover the global Lorentz factor and explain
+how the three paired slices interact when the velocity is not collinear with
+a single spatial axis.
+
+In particular, an ordinary Euclidean rotation angle adds by ordinary angle
+addition, while collinear Lorentz boosts compose by addition of rapidities.
+Because $\theta=\gd\chi$ is nonlinear, a literal R7 rotation by $\theta$ is
+not by itself a homomorphic representation of boost composition. Either the
+squeeze/projection participates essentially in the composition law, the
+relevant R7 parameter is not simply $\theta$, or the lifted representation
+has additional structure. This is a constraint on the model, not a cosmetic
+detail.
+
+\section{Angles become plural}
+
+Let $a_i\in\Aspace_i$ denote the one-axis vantage relation. The established
+mathematics provides mutually related representations
+\begin{equation}
+\beta_{v_i}
+\longleftrightarrow
+\theta_i
+\longleftrightarrow
+\chi_i
+\longleftrightarrow
+\alpha_i
+\longleftrightarrow
+\delta_i.
+\label{eq:representation-chain}
+\end{equation}
+The weak statement is simply that these are different parameterizations of
+one state.
+
+The stronger proposal is that a successful lifted geometry should make these
+representations natural projections of one geometric object. In that
+language, ``angle'' is promoted from one privileged scalar measure to an
+orientation-like relation whose readable coordinate depends on vantage.
+Circular angle, hyperbolic rapidity, and reciprocal aperture are not asserted
+to be numerically identical. They are asserted to encode the same relation.
+
+The sine function therefore remains exactly what it was:
+\begin{equation}
+\sin:\theta_i\mapsto\beta_{v_i}.
+\end{equation}
+What changes is the type of object that may stand behind its argument.
+
+\section{Consolidated one-axis identities}
+
+For one selected paired slice $\mathcal{P}_i$, define
+\begin{equation}
+\beta_{v_i}=\frac{v_i}{c},
+\qquad
+\beta_{\ccomp{i}}=\frac{\ccomp{i}}{c},
+\qquad
+\beta_{v_i}^2+\beta_{\ccomp{i}}^2=1.
+\end{equation}
+Then
+\begin{align}
+\beta_{v_i}
+&=\sin\theta_i
+=\tanh\chi_i
+=\frac{1}{\alpha_i},
+\label{eq:master1}\\
+\beta_{\ccomp{i}}
+&=\cos\theta_i
+=\sech\chi_i
+=\frac{1}{\delta_i},
+\label{eq:master2}\\
+\alpha_i
+&=\csc\theta_i
+=\coth\chi_i
+=\gamma_{\ccomp{i}},
+\label{eq:master3}\\
+\delta_i
+&=\sec\theta_i
+=\cosh\chi_i
+=\gamma_{v_i},
+\label{eq:master4}\\
+\frac{\delta_i}{\alpha_i}
+&=\tan\theta_i
+=\sinh\chi_i,
+\label{eq:master5}\\
+\frac{\alpha_i}{\delta_i}
+&=\cot\theta_i
+=\csch\chi_i,
+\label{eq:master6}\\
+\frac{1}{\alpha_i^2}
++
+\frac{1}{\delta_i^2}
+&=1,
+\label{eq:master7}\\
+\alpha_i^2+\delta_i^2
+&=\alpha_i^2\delta_i^2,
+\label{eq:master8}\\
+(\alpha_i,\delta_i,\alpha_i\delta_i)
+&=
+\alpha_i\delta_i
+\left(
+\beta_{\ccomp{i}},\beta_{v_i},1
+\right).
+\label{eq:master9}
+\end{align}
+Every equality in this section follows from the definitions and standard
+trigonometric or hyperbolic identities. None of them establishes the R7
+interpretation by itself.
+
+\section{Conclusion}
+
+The elementary result is compact. A one-axis relativistic state has an exact
+circular representation, an exact hyperbolic representation, and an exact
+reciprocal representation. The Gudermannian connects the circular and
+hyperbolic bodies. The reciprocal pair forms a constrained curve and a
+triangle similar to the normalized velocity triangle. The reciprocal
+apertures cross with the two gamma-like factors:
+\begin{equation}
+\alpha_i=\gamma_{\ccomp{i}},
+\qquad
+\delta_i=\gamma_{v_i}.
+\end{equation}
+
+The GPD-specific proposal begins when this one-axis relation is placed inside
+the paired seven-dimensional geometry
+\begin{equation}
+\Mseven
+=
+\bigl(\tau,(x,t_x),(y,t_y),(z,t_z)\bigr)
+\end{equation}
+and the three one-axis slices are asked to reclose into a single relativistic
+kinematics. The complementary leg is therefore left deliberately alive as a
+physical question. The historical $\ccomp{i}$ notation keeps the axiswise
+pairing visible without pretending it is an ordinary Cartesian component of
+$c$; the alternative $d_i$ notation remains available if the eventual
+geometry shows that the quantity should literally be interpreted as a
+differential light-speed component.
+
+Nothing here requires a new sine function. The speculative move is instead
+to ask whether the argument of the familiar function is only one coordinate
+body of a deeper relation:
+\begin{equation}
+\boxed{
+\texttt{sin()}\text{ stays }\texttt{sin()};
+\qquad
+\text{angles become plural.}
+}
+\end{equation}
+
+\begin{center}
+\emph{Same relation. Different body.}
+\end{center}
+
+\begin{thebibliography}{9}
+
+\bibitem{MunroGPD}
+W. B. Munro,
+\emph{General Peace Dynamics},
+working manuscript and special-relativity sketch notes, 2025.
+
+\bibitem{DLMF}
+NIST Digital Library of Mathematical Functions,
+\S 4.23(viii), ``Gudermannian Function,''
+Eqs. 4.23.39--4.23.42.
+
+\end{thebibliography}
+
+\end{document}

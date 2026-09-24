@@ -1,0 +1,575 @@
+\documentclass[9pt,twocolumn]{article}
+
+\usepackage[margin=0.58in,columnsep=0.22in]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{microtype}
+\usepackage{newtxtext,newtxmath}
+
+\setlength{\parindent}{0.8em}
+\setlength{\parskip}{0pt}
+\setlength{\abovedisplayskip}{4pt}
+\setlength{\belowdisplayskip}{4pt}
+\setlength{\abovedisplayshortskip}{2pt}
+\setlength{\belowdisplayshortskip}{2pt}
+
+\title{\vspace{-2.4em}\bfseries
+\texttt{sin()} Stays \texttt{sin()}; Angles Become Plural
+\vspace{-0.4em}}
+
+\author{\small Wilder Blair Munro $\times$ Aurora}
+\date{}
+
+\begin{document}
+\maketitle
+\vspace{-2.2em}
+
+\begin{abstract}
+\noindent
+For $\beta=v/c$, special relativity admits simultaneously
+
+$$
+\beta=\sin\theta=\tanh\chi,
+\qquad
+\gamma=\sec\theta=\cosh\chi,
+$$
+
+where $\theta=\operatorname{gd}\chi$ is the Gudermannian relation between circular angle and rapidity. Define additionally
+
+$$
+\alpha=\beta^{-1},\qquad
+\delta=(1-\beta^2)^{-1/2}.
+$$
+
+Then
+
+$$
+\alpha=\csc\theta=\coth\chi,\qquad
+\delta=\sec\theta=\cosh\chi.
+$$
+
+Nothing has happened to \texttt{sin()}. What changed was the representation of angle. We propose treating circular tilt, hyperbolic rapidity, and reciprocal aperture as coordinate bodies of a single \emph{vantage-angle object}. Under this interpretation a lift--rotate--squeeze construction is not motivated by preference for Euclidean rotations; it is the explicit realization of a change of angular chart.
+\end{abstract}
+
+\vspace{-0.6em}
+\section*{I. One motion, several angles}
+
+Let
+
+$$
+\beta_v=\frac{v}{c},\qquad
+\beta_c=\sqrt{1-\beta_v^2},
+$$
+
+so that
+\begin{equation}
+\beta_v^2+\beta_c^2=1.
+\tag{1}
+\end{equation}
+There therefore exists $\theta\in(-\pi/2,\pi/2)$ satisfying
+\begin{equation}
+\beta_v=\sin\theta,\qquad
+\beta_c=\cos\theta.
+\tag{2}
+\end{equation}
+
+Special relativity instead naturally parameterizes the same speed by rapidity
+\begin{equation}
+\beta_v=\tanh\chi,
+\qquad
+\gamma_v=\cosh\chi,
+\qquad
+\gamma_v^{-1}=\operatorname{sech}\chi.
+\tag{3}
+\end{equation}
+Equations (2)--(3) imply
+\begin{equation}
+\sin\theta=\tanh\chi,\qquad
+\cos\theta=\operatorname{sech}\chi.
+\tag{4}
+\end{equation}
+This correspondence is not novel. It is exactly the Gudermannian:
+\begin{equation}
+\boxed{\theta=\operatorname{gd}\chi.}
+\tag{5}
+\end{equation}
+
+Thus the circular and hyperbolic descriptions require no complexification:
+
+\begin{equation*}
+\begin{array}{c|c}
+\text{circular} & \text{hyperbolic}\\ \hline
+\sin\theta & \tanh\chi\\
+\cos\theta & \operatorname{sech}\chi\\
+\tan\theta & \sinh\chi\\
+\csc\theta & \coth\chi\\
+\sec\theta & \cosh\chi
+\end{array}
+\tag{6}
+\end{equation*}
+
+The physical invariant is not either parameterization. It is the relation they coordinatize.
+
+Define a \emph{vantage angle}
+
+$$
+\mathfrak a\in\mathcal A
+$$
+
+with circular and hyperbolic charts
+
+$$
+q_\theta(\mathfrak a)=\theta,
+\qquad
+q_\chi(\mathfrak a)=\chi,
+$$
+
+related by (5). Then
+\begin{equation}
+\beta_v
+=\sin(q_\theta\mathfrak a)
+=\tanh(q_\chi\mathfrak a).
+\tag{7}
+\end{equation}
+
+The word ``angle'' has become plural without modifying either function.
+
+\section*{II. Reciprocal angles}
+
+Now define
+\begin{equation}
+\alpha:=\frac1{\beta_v}=\frac{c}{v},
+\qquad
+\delta:=\frac1{\beta_c}.
+\tag{8}
+\end{equation}
+From (2),
+\begin{equation}
+\boxed{
+\alpha=\csc\theta,\qquad
+\delta=\sec\theta.
+}
+\tag{9}
+\end{equation}
+From (6),
+\begin{equation}
+\boxed{
+\alpha=\coth\chi,\qquad
+\delta=\cosh\chi.
+}
+\tag{10}
+\end{equation}
+
+Consequently
+
+\begin{equation*}
+\delta=\gamma_v.
+\tag{11}
+\end{equation*}
+
+If a complementary Lorentz factor is defined by
+
+$$
+\gamma_c:=(1-\beta_c^2)^{-1/2},
+$$
+
+then (1) gives
+
+$$
+\gamma_c=\frac1{|\beta_v|}.
+$$
+
+For $\beta_v>0$,
+\begin{equation}
+\boxed{
+\alpha=\gamma_c,\qquad
+\delta=\gamma_v.
+}
+\tag{12}
+\end{equation}
+
+The reciprocal pair obeys
+\begin{equation}
+\boxed{
+\frac1{\alpha^2}+\frac1{\delta^2}=1,
+}
+\tag{13}
+\end{equation}
+or equivalently
+\begin{equation}
+\boxed{
+\alpha^2+\delta^2=\alpha^2\delta^2.
+}
+\tag{14}
+\end{equation}
+Hence
+\begin{equation}
+\sqrt{\alpha^2+\delta^2}=\alpha\delta
+\tag{15}
+\end{equation}
+in the positive quadrant.
+
+Equation (15) is the reciprocal triangle.
+
+\section*{III. The triangle survives inversion}
+
+Write the normalized velocity triangle as
+\begin{equation}
+T_\beta=(\beta_c,\beta_v,1).
+\tag{16}
+\end{equation}
+Define
+\begin{equation}
+\kappa
+:=
+\frac1{\beta_v\beta_c}
+=\alpha\delta.
+\tag{17}
+\end{equation}
+Uniform scaling gives
+
+$$
+\kappa T_\beta
+=
+\left(
+\frac1{\beta_v},
+\frac1{\beta_c},
+\frac1{\beta_v\beta_c}
+\right),
+$$
+
+therefore
+\begin{equation}
+\boxed{
+\kappa T_\beta=(\alpha,\delta,\alpha\delta)=:T_\rho.
+}
+\tag{18}
+\end{equation}
+
+The ``reciprocal triangle'' is consequently not a second arbitrary triangle. It is similar to the first.
+
+Indeed,
+\begin{equation}
+\frac{\delta}{\alpha}
+=\frac{\beta_v}{\beta_c}
+=\tan\theta.
+\tag{19}
+\end{equation}
+and
+\begin{equation}
+\frac{\alpha}{\delta}
+=\frac{\beta_c}{\beta_v}
+=\cot\theta.
+\tag{20}
+\end{equation}
+
+The direction survives. Only scale changes.
+
+Thus the sequence
+
+$$
+(\beta_c,\beta_v,1)
+\longrightarrow
+(\alpha,\delta,\alpha\delta)
+$$
+
+is exactly
+
+\begin{equation}
+\boxed{\text{same angle; reciprocal body.}}
+\tag{21}
+\end{equation}
+
+This is the geometric fact hidden by the original notational overload.
+
+\section*{IV. The apparent sin}
+
+The expression
+\begin{equation}
+\sin\alpha=\frac1\alpha
+\tag{22}
+\end{equation}
+is false if $\alpha\in\mathbb R$ is interpreted as an ordinary circular angle measured in radians.
+
+But (9) says something more precise:
+
+\begin{equation}
+\alpha=\csc\theta
+\quad\Longrightarrow\quad
+\sin\theta=\frac1\alpha.
+\tag{23}
+\end{equation}
+
+The original abuse therefore conflates an object with one of its coordinates.
+
+Let the reciprocal chart be
+
+$$
+q_\rho(\mathfrak a)=(\alpha,\delta).
+$$
+
+The intrinsic circular projection
+
+$$
+S:\mathcal A\rightarrow[-1,1]
+$$
+
+may be written
+\begin{equation}
+S(\mathfrak a)
+:=
+\sin(q_\theta\mathfrak a).
+\tag{24}
+\end{equation}
+In the reciprocal chart,
+\begin{equation}
+\boxed{
+S(\mathfrak a)=\frac1\alpha.
+}
+\tag{25}
+\end{equation}
+
+Thus \texttt{sin()} remains ordinary \texttt{sin()}. The coordinate expression of its argument changes.
+
+Suppress the chart map and (25) degenerates into (22).
+
+The ``error'' is therefore informative:
+\begin{equation}
+\boxed{
+\text{the missing projection was the hole in the notation.}
+}
+\tag{26}
+\end{equation}
+
+\section*{V. $\delta$ was not optional}
+
+Equation (8) makes $\alpha$ meaningless as a complete vantage coordinate without its complement:
+
+$$
+\alpha^{-2}+\delta^{-2}=1.
+$$
+
+Neither independently determines a Euclidean decomposition without the constraint binding them.
+
+The pair
+
+$$
+(\alpha,\delta)
+$$
+
+is therefore more fundamental to the reciprocal chart than either symbol alone.
+
+In the circular chart:
+
+\begin{equation}
+(\alpha,\delta)
+=
+(\csc\theta,\sec\theta).
+\tag{27}
+\end{equation}
+
+In the hyperbolic chart:
+
+\begin{equation}
+(\alpha,\delta)
+=
+(\coth\chi,\cosh\chi).
+\tag{28}
+\end{equation}
+
+In the normalized velocity chart:
+
+\begin{equation}
+(\alpha,\delta)
+=
+(\beta_v^{-1},\beta_c^{-1}).
+\tag{29}
+\end{equation}
+
+The same vantage relation appears respectively as circular complementarity, hyperbolic boost geometry, and reciprocal aperture.
+
+Spatial vantage $\delta$ is therefore not an auxiliary correction to temporal vantage $\alpha$.
+
+They are dual apertures of one constrained relation.
+
+\section*{VI. What, then, is $\varphi$?}
+
+If $\alpha$ and $\delta$ are reciprocal coordinates rather than ordinary circular angles, the expression
+
+\begin{equation}
+\varphi=\pi-(\alpha+\delta)
+\tag{30}
+\end{equation}
+
+has no invariant meaning.
+
+The third ``angle'' in the original triangle must therefore be retyped.
+
+The dimensionless mixed quantity already supplied by the geometry is
+\begin{equation}
+m
+:=
+\frac{\delta}{\alpha}
+=\frac{\beta_v}{\beta_c}
+=\sinh\chi
+=\tan\theta.
+\tag{31}
+\end{equation}
+Hence a mixed circular angle may be recovered by
+
+\begin{equation}
+\varphi_\theta:=\arctan m=\theta,
+\tag{32}
+\end{equation}
+
+while its hyperbolic coordinate is
+
+\begin{equation}
+\varphi_\chi:=\operatorname{arsinh}m=\chi.
+\tag{33}
+\end{equation}
+
+Thus a third independent scalar angle is unnecessary in the one-axis case. What appeared as $\varphi$ is naturally interpreted as the \emph{transition relation} between the complementary apertures:
+\begin{equation}
+\boxed{
+\varphi:
+\alpha\leftrightarrow\delta,
+\qquad
+\frac{\delta}{\alpha}
+=\tan\theta
+=\sinh\chi.
+}
+\tag{34}
+\end{equation}
+
+In higher-dimensional vantage geometry, $\varphi$ may regain independent content as a mixed spatial--temporal orientation. The one-axis construction does not establish that extension; it identifies the object that such an extension must reduce to.
+
+\section*{VII. Lift--rotate--squeeze}
+
+A lifted Euclidean account of special relativity is otherwise vulnerable to an obvious objection:
+
+\begin{quote}
+Why lift into a larger space, rotate, and project back down if the construction was selected merely to reproduce the Lorentz transformation?
+\end{quote}
+
+The plural-angle interpretation supplies a non-circular motivation.
+
+The physical relation admits at least the coordinate descriptions
+
+$$
+\theta,\qquad
+\chi,\qquad
+(\alpha,\delta).
+$$
+
+The circular representation exposes an ordinary rotation. The reciprocal representation exposes the Lorentz factors. Their relation includes an exact similarity:
+
+$$
+T_\rho=\kappa T_\beta.
+$$
+
+Hence
+
+\begin{equation}
+\boxed{
+\text{lift}\rightarrow
+\text{rotate}\rightarrow
+\text{squeeze}
+}
+\tag{35}
+\end{equation}
+
+may be read as a geometric implementation of
+
+\begin{equation}
+\boxed{
+\text{change vantage}\rightarrow
+\text{resolve circular orientation}\rightarrow
+\text{express reciprocal projection}.
+}
+\tag{36}
+\end{equation}
+
+The squeeze is no longer an arbitrary afterthought. A reciprocal chart demands it.
+
+This does not by itself derive special relativity from a higher-dimensional theory. It identifies a precise mathematical structure that a successful derivation would have to explain rather than insert.
+
+\section*{VIII. The actual claim}
+
+No new trigonometric function is proposed.
+
+No identity
+
+$$
+\sin x=x^{-1}
+$$
+
+is asserted for ordinary real angles.
+
+No replacement of rapidity is required.
+
+The proposal is only this:
+
+\begin{equation}
+\boxed{
+\begin{gathered}
+\text{A relativistic vantage may be treated as one geometric object}\\
+\text{admitting circular, hyperbolic, and reciprocal angular charts.}
+\end{gathered}}
+\tag{37}
+\end{equation}
+
+For the one-axis case,
+\begin{equation}
+\boxed{
+\begin{aligned}
+\beta_v
+&=\sin\theta
+=\tanh\chi
+=\alpha^{-1},\\
+\beta_c
+&=\cos\theta
+=\operatorname{sech}\chi
+=\delta^{-1},\\
+\gamma_c
+&=\csc\theta
+=\coth\chi
+=\alpha,\\
+\gamma_v
+&=\sec\theta
+=\cosh\chi
+=\delta,\\
+\frac{\delta}{\alpha}
+&=\tan\theta
+=\sinh\chi.
+\end{aligned}}
+\tag{38}
+\end{equation}
+
+Every equality in (38) is ordinary mathematics.
+
+The speculative step is the box around them.
+
+\vfill
+\begin{center}
+\large
+
+$$
+\boxed{\texttt{sin()} \text{ stays } \texttt{sin()}.}
+$$
+
+$$
+\boxed{\text{Angles become plural.}}
+$$
+
+\smallskip
+\textit{Same relation. Different body.}
+\end{center}
+
+\section*{Reference}
+
+\small
+NIST Digital Library of Mathematical Functions,
+\S4.23(viii), ``Gudermannian Function,'' especially
+Eqs.~4.23.39--4.23.42.
+
+\end{document}

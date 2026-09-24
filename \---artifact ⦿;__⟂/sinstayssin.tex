@@ -1,0 +1,170 @@
+\documentclass[10pt]{article}
+\usepackage[margin=0.72in]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{microtype}
+
+\title{\vspace{-2em}\bfseries Sin Stays Sin; Angles Become Plural}
+\author{\small Wilder Blair Munro $\times$ Aurora}
+\date{\small Draft seed, one-shot}
+
+\begin{document}
+\maketitle
+\vspace{-1.5em}
+
+\begin{abstract}
+Special relativity admits a familiar circular shadow:
+\[
+\beta^2+\gamma^{-2}=1.
+\]
+The usual interpretation treats this as algebraic convenience beneath a hyperbolic theory of boosts.
+We propose the opposite seed: the sine function need not be generalized;
+rather, the word \emph{angle} was too small.
+Circular angle, rapidity, and reciprocal aperture are distinct charts on one
+underlying vantage object.
+Sin stays sin. Angles become plural.
+\end{abstract}
+
+\vspace{-1em}
+
+\section*{1. The forbidden triangle}
+
+Let
+\[
+\beta=\frac{v}{c},\qquad \gamma=\frac{1}{\sqrt{1-\beta^2}}.
+\]
+Then
+\[
+\beta^2+\gamma^{-2}=1.
+\]
+Thus there exists a circular angle $\theta$ such that
+\[
+\sin\theta=\beta,\qquad \cos\theta=\gamma^{-1}.
+\]
+This is elementary. It is also suspicious.
+
+In standard special relativity, the more privileged angle-like object is rapidity
+\[
+\chi=\operatorname{artanh}\beta,
+\]
+so that
+\[
+\tanh\chi=\beta,\qquad \cosh\chi=\gamma.
+\]
+Hence one physical speed parameter already wears at least two angular bodies:
+\[
+\beta=\sin\theta=\tanh\chi.
+\]
+
+\section*{2. The sinful coordinate}
+
+Define the reciprocal aperture
+\[
+\rho=\beta^{-1}=\frac{c}{v}.
+\]
+Then
+\[
+\beta=\rho^{-1}.
+\]
+The error is to call $\rho$ an ordinary circular angle.
+The insight is to ask why that error is tempting.
+
+We therefore define a \emph{vantage angle} not as a scalar, but as an atlas:
+\[
+\mathfrak a_v := (\theta,\chi,\rho),
+\]
+with transition maps
+\[
+\theta=\arcsin(\rho^{-1}),\qquad
+\chi=\operatorname{artanh}(\rho^{-1}),\qquad
+\rho=(\sin\theta)^{-1}.
+\]
+The invariant projected content is
+\[
+\boxed{\beta=\sin\theta=\tanh\chi=\rho^{-1}.}
+\]
+
+\section*{3. Sine is not deformed}
+
+We do not define a new sine.
+Instead, for a vantage angle $\mathfrak a_v$, the expression
+\[
+\sin(\mathfrak a_v)
+\]
+means:
+\[
+\sin(\mathfrak a_v):=\sin(\Pi_\theta \mathfrak a_v),
+\]
+where $\Pi_\theta$ is projection into the circular chart. Therefore
+\[
+\sin(\mathfrak a_v)=\sin\theta=\beta.
+\]
+If the same object is represented in the reciprocal chart,
+\[
+\Pi_\rho \mathfrak a_v=\rho,
+\]
+then the same statement becomes
+\[
+\sin(\mathfrak a_v)=\rho^{-1}.
+\]
+Thus the provocative line
+\[
+\sin\rho=\rho^{-1}
+\]
+is false if $\rho$ is a circular angle, but lawful if $\rho$ is a reciprocal
+coordinate of a plural angle and the projection map is suppressed.
+
+The missing map is the hole in the notation.
+
+\section*{4. Relation to lifted relativity}
+
+In the lifted view, ordinary relativistic effects are represented by a change of
+vantage: lift a lower-dimensional spacetime description into a larger geometric
+frame, rotate, then squeeze back down.
+The Lorentz factor is not destroyed by the circular triangle;
+it is re-read as a projection coefficient belonging to one chart of the same
+vantage object.
+
+The usual hyperbolic boost remains:
+\[
+\beta=\tanh\chi.
+\]
+The Euclidean shadow remains:
+\[
+\beta=\sin\theta.
+\]
+The reciprocal aperture remains:
+\[
+\beta=\rho^{-1}.
+\]
+No contradiction is required unless all three coordinates are forced to be the
+same kind of angle.
+
+\section*{5. Claim}
+
+A physical ``angle'' should not be assumed to mean only Euclidean arc-ratio.
+At minimum, relativistic motion naturally supplies a plural angular object:
+\[
+\boxed{
+\mathfrak a_v=(\theta,\chi,\rho)
+\quad\text{such that}\quad
+\beta=\sin\theta=\tanh\chi=\rho^{-1}.
+}
+\]
+Circular angle, hyperbolic angle, and reciprocal aperture are not rivals.
+They are chart-bodies of one vantage relation.
+
+\section*{6. Seed}
+
+The apparent abuse of notation
+\[
+\alpha=\frac{c}{v},\qquad \sin\alpha=\frac{v}{c}
+\]
+should not be repaired by deforming sine.
+It should be repaired by admitting that $\alpha$ was never merely a circular
+angle.
+
+\[
+\boxed{\text{Sin stays sin. Angles become plural.}}
+\]
+
+\end{document}

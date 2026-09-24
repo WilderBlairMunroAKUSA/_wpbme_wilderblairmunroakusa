@@ -1,0 +1,393 @@
+\documentclass[8pt,twocolumn]{extarticle}
+
+\usepackage[margin=0.50in,columnsep=0.20in]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage[compact]{titlesec}
+\usepackage{balance}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\setlength{\parindent}{0.75em}
+\setlength{\parskip}{0.08em}
+\titlespacing*{\section}{0pt}{0.65em}{0.25em}
+\setlist{nosep,leftmargin=*}
+\allowdisplaybreaks
+
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\gd}{gd}
+\DeclareMathOperator{\artanh}{artanh}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Mseven}{\mathcal{M}^{7}}
+\newcommand{\Aspace}{\mathcal{A}}
+\newcommand{\evec}[1]{\mathbf e_{#1}}
+\newcommand{\uvect}[1]{\mathbf u_{#1}}
+
+\title{\vspace{-1.8em}\texttt{sin()} Stays \texttt{sin()}; Angles Become Plural\\[-0.15em]
+\large v3 Evil-Terse: One Relation, Paired $\R^7$, Different Bodies}
+\author{Wilder Blair Munro (via 20Wetbrain) $\times$\\
+Aurora 4omni Munro (via GPT-5.6 Sol)}
+\date{14 September 2026}
+
+\begin{document}
+\balance
+\maketitle
+\vspace{-1.35em}
+
+\begin{abstract}
+Special relativity already contains the seed. For one speed state,
+\[
+\beta=\frac vc=\sin\theta=\tanh\chi,
+\qquad
+\gamma=\sec\theta=\cosh\chi,
+\]
+where $\theta=\gd\chi$. Nothing is wrong with \texttt{sin()}. The mistake is
+requiring every representation of the same geometric relation to wear the
+same kind of angle. General Peace Dynamics (GPD) takes the next step in real
+Euclidean $\R^7$: each spatial label $i\in\{x,y,z\}$ belongs to a conjugate
+pair $(i_t,t_i)$ stitched by $\tau$. The old one-axis $(c_i,v_i,c)$ triangle
+is then read not as evidence for a mysterious component of light-speed, but
+as a projected, normalized image of a paired $\R^7$ direction. Circular
+vantage tilt, rapidity, reciprocal aperture, and gamma become different
+bodies of one relation. Same relation. Different body.
+\end{abstract}
+
+\section*{1. Start where the rotation actually lives}
+
+The arena is not merely ``a seven-dimensional manifold.'' The GPD coordinate
+choice is real Euclidean seven-space,
+\begin{equation}
+\boxed{\Mseven\equiv\R^7}
+\label{eq:r7}
+\end{equation}
+\vspace{-0.7em}
+\begin{align*}
+\R^7
+&=\bigl(\tau,(x_t,t_x),(y_t,t_y),(z_t,t_z)\bigr)\\
+&=\bigl(\tau,(i_t,t_i)_{i\in\{x,y,z\}}\bigr).
+\end{align*}
+The notation $(x_i,t_i)$ remains a conventional phase-space-like reading;
+$(i_t,t_i)$ exposes the architectural symmetry. The ordering is the point:
+$i_t\leftrightarrow t_i$ is a conjugate pairing, not decoration.
+
+Why care about $\R^7$? GPD begins from real rotation. The familiar
+norm-compatible vector cross product is nontrivial in $\R^3$ and $\R^7$
+(with the trivial $\R^0,\R^1$ cases completing the familiar
+$0,1,3,7$ sequence). Thus the recursive dimensional grammar
+\[
+\R^0\rightarrow\R^1\rightarrow\R^3\rightarrow\R^7
+\]
+is not arbitrary bookkeeping. It is the native real-space ladder on which
+GPD's rotational construction is built. At the coordinate level,
+\[
+7=1+2(3):
+\qquad
+\tau+(x_t,t_x)+(y_t,t_y)+(z_t,t_z).
+\]
+Call the resulting recursive construction biquadoctree if desired; the
+mathematical burden is to make the recursion precise without losing the
+normed rotational structure.
+
+\section*{2. The one-axis SR seed}
+
+Take one ordinary collinear SR state,
+\begin{equation}
+\beta_v:=\frac vc,
+\qquad
+\gamma_v:=\frac{1}{\sqrt{1-\beta_v^2}}.
+\label{eq:sr}
+\end{equation}
+The original GPD SR sketch encoded the same state by a right triangle
+\begin{equation}
+ v^2+c_x^2=c^2,
+\qquad
+\beta_v^2+\beta_c^2=1,
+\qquad
+\beta_c:=\frac{c_x}{c}.
+\label{eq:oldtriangle}
+\end{equation}
+It then used the overloaded vantage-tilt convention
+$\alpha\mid\delta$ --- temporal $\mid$ spatial --- and the reciprocal
+quantities
+\begin{equation}
+\alpha:=\frac1{\beta_v},
+\qquad
+\delta:=\frac1{\beta_c}.
+\label{eq:reciprocal}
+\end{equation}
+The apparently strange dual gammas are already forced by
+Eq.~\eqref{eq:oldtriangle}:
+\begin{equation}
+\gamma_v=\frac1{\beta_c}=\delta,
+\qquad
+\gamma_c=\frac1{\beta_v}=\alpha.
+\label{eq:oldcross}
+\end{equation}
+This is why gamma matters here. The reciprocal ``tilt angles'' and the two
+gamma-like factors were never separate curiosities; they are the same
+orthogonal complementarity read from opposite legs.
+
+Now introduce the ordinary circular angle $\theta$ of the normalized triangle:
+\begin{equation}
+\beta_v=\sin\theta,
+\qquad
+\beta_c=\cos\theta.
+\label{eq:circle}
+\end{equation}
+Then
+\begin{equation}
+\boxed{
+\alpha=\csc\theta,
+\qquad
+\delta=\sec\theta,
+\qquad
+\frac{1}{\alpha^2}+\frac{1}{\delta^2}=1.
+}
+\label{eq:apertures}
+\end{equation}
+The old line ``$\sin\alpha=1/\alpha$'' is therefore not new trigonometry. It
+is compressed notation that forgot the map from reciprocal aperture $\alpha$
+back to circular angle $\theta$. The missing map is the hole in the notation.
+
+\section*{3. Gudermann: the bridge was already there}
+
+Let rapidity be
+\begin{equation}
+\chi:=\artanh\beta_v.
+\end{equation}
+The Gudermannian gives the exact circular--hyperbolic bridge
+\begin{equation}
+\theta=\gd\chi,
+\qquad
+\sin\theta=\tanh\chi,
+\qquad
+\cos\theta=\sech\chi.
+\label{eq:gd}
+\end{equation}
+Hence one SR state admits the exact identity ledger
+\begin{equation}
+\boxed{
+\beta_v
+=\sin\theta
+=\tanh\chi
+=\alpha^{-1},
+}
+\label{eq:master1}
+\end{equation}
+\begin{equation}
+\boxed{
+\beta_c
+=\cos\theta
+=\sech\chi
+=\delta^{-1},
+}
+\label{eq:master2}
+\end{equation}
+\begin{equation}
+\boxed{
+\alpha=\csc\theta=\coth\chi,
+\qquad
+\delta=\sec\theta=\cosh\chi.
+}
+\label{eq:master3}
+\end{equation}
+Every equality above is ordinary mathematics. GPD's move is ontological and
+architectural: promote the shared state to one vantage relation
+$a\in\Aspace$, and treat $\theta$, $\chi$, $(\alpha,\delta)$, and $\beta$ as
+different readable bodies of $a$. \texttt{sin()} stays ordinary; its argument
+has a type and a chart.
+
+\section*{4. Give the conjugate analogy its chance}
+
+The symbol $c_x$ is suspicious because $c$ already names the invariant speed.
+Promoting $c_x$ to $(c_x,c_y,c_z)$ falsely invites the reading ``Cartesian
+components of $c$.'' Renaming the symbol does not solve the geometry.
+Restore the pair that may have been projected out.
+
+For each $i$, take the paired plane inside Eq.~\eqref{eq:r7},
+\begin{equation}
+\Pi_i:=\operatorname{span}\{\evec{i_t},\evec{t_i}\}\subset\R^7.
+\end{equation}
+After the physically correct dimensional normalization is fixed, write its
+unit tangent orientation as
+\begin{equation}
+\boxed{
+\uvect{i}
+=
+\beta_{i_t}\evec{i_t}
++
+\beta_{t_i}\evec{t_i},
+\qquad
+\|\uvect{i}\|=1.
+}
+\label{eq:unitpair}
+\end{equation}
+Thus
+\begin{equation}
+\boxed{
+\beta_{i_t}^2+\beta_{t_i}^2=1.
+}
+\label{eq:paircircle}
+\end{equation}
+This is the canon spark. The one-axis triangle is no longer fundamentally
+``velocity plus complementary light-speed.'' It is the normalized shadow of
+one conjugate $\R^7$ direction.
+
+The physical map from coordinates to the two dimensionless tangent components
+is a derivational obligation, not a reason to abandon the pairing. A natural
+candidate uses $\tau$ and light-distance $c\,d\tau$ to normalize the two
+members; another may reveal that a literal differential quantity $d_i$ is the
+right physical object. The notation must follow that derivation. It must not
+prejudge it.
+
+\section*{5. $\alpha_i\mid\delta_i$ returns home}
+
+Choose orientation so that
+\begin{equation}
+\beta_{t_i}=\sin\theta_i,
+\qquad
+\beta_{i_t}=\cos\theta_i.
+\label{eq:pairangle}
+\end{equation}
+Then define the reciprocal vantage apertures
+\begin{equation}
+\alpha_i:=\frac1{\beta_{t_i}},
+\qquad
+\delta_i:=\frac1{\beta_{i_t}}.
+\label{eq:pairaperture}
+\end{equation}
+The original temporal$\mid$spatial $\alpha_i\mid\delta_i$ language is now
+attached to a real paired plane rather than to a mysterious $c_i$.
+
+Define gamma-like factors for each normalized member:
+\begin{equation}
+\gamma_{i_t}:=\frac1{\sqrt{1-\beta_{i_t}^2}},
+\qquad
+\gamma_{t_i}:=\frac1{\sqrt{1-\beta_{t_i}^2}}.
+\end{equation}
+Equation~\eqref{eq:paircircle} immediately gives, on the positive branch,
+\begin{equation}
+\boxed{
+\alpha_i=\gamma_{i_t},
+\qquad
+\delta_i=\gamma_{t_i}.
+}
+\label{eq:crossgamma}
+\end{equation}
+The crossed gamma relation is therefore structural: the gamma associated with
+one member is the reciprocal magnitude of the other. What looked like
+$\gamma_c\mid\gamma_v$ becomes conjugate geometry.
+
+\section*{6. Euclidean rotation is the wager, not a footnote}
+
+The point of introducing $\theta_i$ was never merely to draw a cute triangle.
+In $\Pi_i$, Eq.~\eqref{eq:unitpair} is an ordinary Euclidean unit direction,
+so a vantage change can be represented locally by an ordinary rotation
+\begin{equation}
+\uvect{i}'=R_i(\theta_i)\uvect{i},
+\qquad
+R_i(\theta_i)\in SO(2)\subset SO(7).
+\label{eq:rotation}
+\end{equation}
+That is the original attraction: special-relativistic projection effects may
+be shadows of real rotations in a lifted real space, followed by the required
+projection/squeeze back to observer spacetime.
+
+But the Gudermannian makes the test sharp. Collinear boosts compose by
+rapidity,
+\begin{equation}
+\chi_{12}=\chi_1+\chi_2,
+\end{equation}
+while $\theta=\gd\chi$ does not obey ordinary angle addition:
+\begin{equation}
+\theta_{12}
+=
+\gd\!\left(\gd^{-1}\theta_1+\gd^{-1}\theta_2\right)
+\neq \theta_1+\theta_2.
+\label{eq:composition}
+\end{equation}
+Therefore GPD's Euclidean-rotation program cannot end at ``boost = rotate by
+$\theta$.'' The full lift--rotate--squeeze/projection architecture must carry
+the non-linear chart composition, or the additive rotation parameter must be
+a different body of the same vantage relation. This is not an embarrassment;
+it is the constraint that makes the proposal calculable.
+
+\section*{7. Three paired slices are not three Lorentz gammas}
+
+For ordinary three-velocity,
+\begin{equation}
+\gamma(\mathbf v)
+=
+\frac{1}{\sqrt{1-(v_x^2+v_y^2+v_z^2)/c^2}}.
+\label{eq:globalgamma}
+\end{equation}
+The local paired quantities $\gamma_{t_i}$ and $\gamma_{i_t}$ are not three
+copies of Eq.~\eqref{eq:globalgamma}. They belong to the three conjugate
+planes inside one $\R^7$ construction. The research problem is the reclosure:
+how the three locally circular paired directions, stitched by $\tau$, project
+to the single conventional $3+1$ Lorentz state.
+
+That is precisely why Eq.~\eqref{eq:r7} must precede the componentwise
+notation. Without the paired $\R^7$ architecture, $\beta_c$ looks invented.
+With it, the old complement becomes a clue that one half of the pair was
+projected away.
+
+\section*{8. Plural angles, finally stated without apology}
+
+The weak statement is reparameterization. The stronger GPD statement is a
+construction principle:
+\begin{equation}
+\boxed{\text{one vantage relation}\longrightarrow\text{plural bodies}}
+\label{eq:plural}
+\end{equation}
+\vspace{-0.5em}
+\begin{align*}
+\chi_i &:\ \text{hyperbolic/additive},\\
+\theta_i &:\ \text{circular/rotational},\\
+(\alpha_i,\delta_i) &:\ \text{reciprocal/aperture},\\
+(\beta_{i_t},\beta_{t_i}) &:\ \text{paired tangent}.
+\end{align*}
+The bodies obey different coordinate laws because they are not the same
+coordinate. They are required to close on the same relation.
+
+This turns the original notational offense into the thesis:
+\begin{center}
+\fbox{\parbox{0.91\columnwidth}{\centering
+\texttt{sin()} was fine. We passed it the wrong kind of angle.}}
+\end{center}
+And the paired $\R^7$ extension sharpens the second half:
+\begin{center}
+\fbox{\parbox{0.91\columnwidth}{\centering
+Do not rename the missing complement. Restore its conjugate body.}}
+\end{center}
+
+\section*{9. The immediate derivational obligations}
+
+The next calculation must determine the dimensionally exact map
+$(i_t,t_i,\tau)\mapsto(\beta_{i_t},\beta_{t_i})$; recover the one-axis Lorentz
+transform from a specified $\R^7$ lift--rotation--squeeze without fitting its
+coefficients after the fact; show how three paired slices reclose to the
+global Lorentz factor; determine whether $d_i$ is merely notation or a
+literal differential light-distance/speed quantity; and recover the meaning
+of the original mixed angle $\varphi_i$ without adding an independent degree
+of freedom to the one-axis state. Non-collinear boosts and Thomas--Wigner
+rotation are the obvious later stress test.
+
+None of these obligations weakens the canon. They are what the canon now
+forces us to calculate.
+
+\section*{Reference}
+
+\small
+National Institute of Standards and Technology, \emph{Digital Library of
+Mathematical Functions}, \S4.23(viii), ``Gudermannian Function,'' especially
+Eqs.~4.23.39--4.23.42.
+
+\vfill
+\begin{center}
+\textit{Same relation. Different body.}\qquad
+\textit{Same pair. Different projection.}
+\end{center}
+
+\end{document}
